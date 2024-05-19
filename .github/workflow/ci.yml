@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      SOME_VAR: "I am a environment variable"
+      GITHUB_VAR: ${{ vars.GITHUB_VAR }}
+      GITHUB_SECRET: ${{ secrets.GITHUB_SECRET }}
+    
+    steps:
+      - name: "Code Checkout"
+        uses: actions/checkout@v4
+      
+      - name: "Install Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
+      
+      - name: "Send Email Notification"
+        run: chmod +x ./.github/lib/send-email.py && python3 ./.github/lib/send-email.py
+        shell: bash
+
+  
