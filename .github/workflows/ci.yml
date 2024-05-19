@@ -23,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BRANCH_NAME: ${{ github.ref }}
+      BRANCH_NAME: ${{ github.ref_name }}
       ENV_VAR: ${{ vars.ENV_VAR }}
       ENV_SECRET: ${{ secrets.ENV_SECRET }}
-      NAME: ${{ github.events.inputs.name }}
-      AGE: ${{ github.events.inputs.age }}
-      SALARY: ${{ github.events.inputs.salary }}
+      NAME: ${{ github.event.inputs.name }}
+      AGE: ${{ github.event.inputs.age }}
+      SALARY: ${{ github.event.inputs.salary }}
     
     steps:
       - name: "Code Checkout"
