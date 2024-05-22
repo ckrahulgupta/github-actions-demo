@@ -22,6 +22,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    if: github.event.inputs.salary > 1000
+
     env:
       BRANCH_NAME: ${{ github.ref_name }}
       ENV_VAR: ${{ vars.ENV_VAR }}
@@ -35,6 +37,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: "Install Python"
+        if: github.event.inputs.salary > 2000
         uses: actions/setup-python@v5
         with:
           python-version: '3.10' 
@@ -42,5 +45,6 @@ jobs:
       - name: "Display Greetings"
         run: chmod +x ./.github/lib/greetings.sh && sh ./.github/lib/greetings.sh
         shell: bash
+
 
   
