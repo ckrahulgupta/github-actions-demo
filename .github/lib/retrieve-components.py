@@ -12,6 +12,6 @@ API_VERSION 		= os.environ['API_VERSION']
 # WORKSPACE 			= os.environ['GITHUB_WORKSPACE']
 MAX_RETRIES			= 10
 
-os.system(f'sfdx project retrieve start --target-org {ORG_ALIAS} --manifest manifest/package.xml --api-version {API_VERSION}')
+os.system(f'sfdx project retrieve start --target-org {ORG_ALIAS} --manifest manifest/package.xml --api-version {API_VERSION} | tee output.txt')
 
 os.system('ls -alRf force-app/main/default')
