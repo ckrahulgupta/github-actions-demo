@@ -1,0 +1,70 @@
+####################################################
+########## Author:          Rahul Gupta ############
+########## Created At:      08-11-2024  ############
+########## Last Updated At: 08-11-2024  ############
+####################################################
+
+name: backup
+
+# setting the trigger point of this workflow
+on:
+  # workflow will run on pull request generation
+  # schedule:
+   # - cron: '* * * * *'
+
+  # run workflow from Actions tab
+  workflow_dispatch:
+    
+
+# define the jobs
+jobs:
+
+  backup-preprod:
+    runs-on: ubuntu-latest
+
+    # setting the environment
+    # environment: preprod
+
+    # pass docker hub credentials to load the dependencies
+    container:
+      image: ${{ vars.DOCKER_IMAGE }}
+      credentials:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+    env:
+      BACKUP_BRANCH: backup
+      AUTH_URL: ${{ secrets.AUTH_URL }}
+      ORG_ALIAS: ${{ vars.ORG_ALIAS }}
+      API_VERSION: ${{ vars.API_VERSION }}
+      ROLLBACK: false
+
+    # define the steps for validation
+    steps:
+
+      # perform code checkout so that github actions can access it
+      - name: Code Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: 'backup'
+
+
+      # checkout to backup branch
+      - name: Checkout To Backup Branch
+        run: chmod +x ./.github/lib/checkout-branch.sh && ./.github/lib/checkout-branch.sh
+        shell: bash
+
+      # authenticate source org
+      - name: Authenticate Org
+        run: chmod +x ./.github/lib/authenticate-org.sh && ./.github/lib/authenticate-org.sh
+        shell: bash
+
+      # retrieve all the components from preprod org
+      - name: Retrieve Components
+        run: chmod +x ./.github/lib/retrieve-components.sh && ./.github/lib/retrieve-components.sh
+        shell: bash
+
+      # commit and push all the components to the preprod-backup branch
+      - name: Backup Components
+        run: chmod +x ./.github/lib/backup-components.sh && ./.github/lib/backup-components.sh
+        shell: bash
