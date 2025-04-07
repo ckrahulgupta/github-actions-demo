@@ -3,7 +3,7 @@ import os
 print('Inside retrieve-components.py ...')
 
 ORG_ALIAS 			= os.environ['ORG_ALIAS']
-ORG_MY_DOMAIN_URL	= os.environ['ORG_MY_DOMAIN_URL']
+# ORG_MY_DOMAIN_URL	= os.environ['ORG_MY_DOMAIN_URL']
 AUTH_URL 			= os.environ['AUTH_URL']
 API_VERSION 		= os.environ['API_VERSION']
 GIT_USER_EMAIL 		= os.environ['GIT_USER_EMAIL']
