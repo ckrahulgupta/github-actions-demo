@@ -61,10 +61,10 @@ jobs:
 
       # retrieve all the components from preprod org
       - name: Retrieve Components
-        run: chmod +x ./.github/lib/retrieve-components.sh && ./.github/lib/retrieve-components.sh
+        run: chmod +x ./.github/lib/retrieve-components.py && python3 .github/lib/retrieve-components.py
         shell: bash
 
       # commit and push all the components to the preprod-backup branch
       - name: Backup Components
-        run: chmod +x ./.github/lib/backup-components.sh && ./.github/lib/backup-components.sh
+        run: chmod +x ./.github/lib/backup-components.py && python3 .github/lib/backup-components.py
         shell: bash
