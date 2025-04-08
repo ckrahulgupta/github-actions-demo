@@ -188,7 +188,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testRequestMapNull(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         System.runAs(userObj) {
             Test.startTest();
             PortalSendPaymentReceiptEmailAPI testApi = new PortalSendPaymentReceiptEmailAPI();
@@ -204,7 +204,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testRequestMapBlank(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         System.runAs(userObj) {
             Test.startTest();
             PortalSendPaymentReceiptEmailAPI testApi = new PortalSendPaymentReceiptEmailAPI();
@@ -220,7 +220,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testWithoutInvoiceIdKey(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         System.runAs(userObj) {
             Test.startTest();
             PortalSendPaymentReceiptEmailAPI testApi = new PortalSendPaymentReceiptEmailAPI();
@@ -238,7 +238,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testWithoutEmailKey(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         System.runAs(userObj) {
             Test.startTest();
             PortalSendPaymentReceiptEmailAPI testApi = new PortalSendPaymentReceiptEmailAPI();
@@ -256,7 +256,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testInvoiceIdNull(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         Map<String,Object> requestMap = getRequestMap(userObj.Id);
         requestMap.put(PortalConstants.INVOICE_ID_KEY,null);
         System.runAs(userObj) {
@@ -274,7 +274,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testInvoiceIdBlank(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         Map<String,Object> requestMap = getRequestMap(userObj.Id);
         requestMap.put(PortalConstants.INVOICE_ID_KEY,'');
         System.runAs(userObj) {
@@ -292,7 +292,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testInvoiceIdInvalid(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         Map<String,Object> requestMap = getRequestMap(userObj.Id);
         requestMap.put(PortalConstants.INVOICE_ID_KEY,'test');
         System.runAs(userObj) {
@@ -310,7 +310,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testForNullEmail(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         Map<String,Object> requestMap = getRequestMap(userObj.Id);
         requestMap.put(PortalConstants.EMAIL_KEY,null);
         System.runAs(userObj) {
@@ -328,7 +328,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testForBlankEmail(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         Map<String,Object> requestMap = getRequestMap(userObj.Id);
         requestMap.put(PortalConstants.EMAIL_KEY,'');
         System.runAs(userObj) {
@@ -346,7 +346,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testForInvalidEmail(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         Map<String,Object> requestMap = getRequestMap(userObj.Id);
         requestMap.put(PortalConstants.EMAIL_KEY,'test');
         System.runAs(userObj) {
@@ -365,7 +365,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     @isTest 
     private static void testForUnauthorizeUserProfile(){
         User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Tony Stark');
-        Map<String,Object> requestMap = getRequestMap(ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller').Id);
+        Map<String,Object> requestMap = getRequestMap(ApplicationOriginationTestHelper.getSystemAdminUser().Id);
         System.runAs(userObj) {
             Test.startTest();
             PortalSendPaymentReceiptEmailAPI testApi = new PortalSendPaymentReceiptEmailAPI();
@@ -381,7 +381,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testWithoutLoginUserParty(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         List<clcommon__Party__c> clPartyList = getPatyList();
         for(clcommon__Party__c clPartyObj: clPartyList){
             clPartyObj.genesis__Application__c = null;
@@ -403,7 +403,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testSuccesForNullComment(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         List<genesis__Applications__c> applicationList = getApplicationList();
         List<clcommon__Consolidated_Invoice__c> invoiceList = getInvoiceList(applicationList[0].Id);
         invoiceList[0].Comment__c = null;
@@ -427,7 +427,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testSuccesForBlankComment(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         List<genesis__Applications__c> applicationList = getApplicationList();
         List<clcommon__Consolidated_Invoice__c> updatedInvoiceList = getInvoiceList(applicationList[0].Id);
         updatedInvoiceList[0].Comment__c = '';
@@ -451,7 +451,7 @@ public without sharing class PortalSendPaymentReceiptEmailAPITest {
     **/
     @isTest 
     private static void testSuccessWithClUser(){
-        User userObj = ApplicationOriginationTestHelper.getCertifiedLenderUser('Ross Geller');
+        User userObj = ApplicationOriginationTestHelper.getSystemAdminUser();
         List<genesis__Applications__c> applicationList = getApplicationList();        
         System.runAs(userObj) {
             Test.startTest();

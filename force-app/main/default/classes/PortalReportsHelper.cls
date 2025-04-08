@@ -322,7 +322,7 @@ public inherited sharing class PortalReportsHelper {
             objMap.put(PortalConstants.KEY_PURPOSE, objApplicationFeePayment.Pricing_Detail__r.genesis__Rate_Card_Setup_Detail__r.Description__c);
             objMap.put(PortalConstants.KEY_CROP_YEAR, objApplicationFeePayment.genesis__Application__r.Crop_Year__c);
             objMap.put(PortalConstants.KEY_IRC_SHORT_FORM, objApplicationFeePayment.genesis__Application__r.Internal_Reference_Code__c);
-            objMap.put(PortalConstants.KEY_GROWMARK_UNIQUE_IDENTIFIER, objApplicationFeePayment.genesis__Application__r.Growmark_Unique_Identifier__c);
+            objMap.put(PortalConstants.KEY_UNIQUE_IDENTIFIER, objApplicationFeePayment.genesis__Application__r.Unique_Identifier__c);
             objMap.put(PortalConstants.KEY_GUARANTY, objApplicationFeePayment.genesis__Application__r.Guarantee__c);
             objMap.put(PortalConstants.KEY_PAST_DUE, objApplicationFeePayment.Past_Due_Balance__c);
             objMap.put(PortalConstants.KEY_CREATED_DATE, objApplicationFeePayment.genesis__Application__r.CreatedDate);
@@ -365,7 +365,7 @@ public inherited sharing class PortalReportsHelper {
                     resultMap.put(PortalConstants.KEY_MATURITY_DATE, nextSubtranche.genesis__Application__r.genesis__Maturity_Date__c);
                     resultMap.put(PortalConstants.KEY_CERTIFIED_LENDER, nextSubtranche.genesis__Application__r.Certified_Lender__r.Name);
                     resultMap.put(PortalConstants.KEY_IRC_SHORT_FORM, nextSubtranche.genesis__Application__r.Internal_Reference_Code__c);
-                    resultMap.put(PortalConstants.KEY_UNIQUE_IDENTIFIER, nextSubtranche.genesis__Application__r.Growmark_Unique_Identifier__c);
+                    resultMap.put(PortalConstants.KEY_UNIQUE_IDENTIFIER, nextSubtranche.genesis__Application__r.Unique_Identifier__c);
                     resultMap.put(PortalConstants.KEY_SALES_AGENT, nextSubtranche.genesis__Application__r.Sales_Agent__r.Name);
                     resultMap.put(PortalConstants.KEY_EMAIL_ID, nextSubtranche.genesis__Application__r.genesis__Account__r.clcommon__Email__c);
                     resultMap.put(PortalConstants.KEY_MOBILE_PHONE, nextSubtrancheParty.Mobile_Number__c);
@@ -414,7 +414,7 @@ public inherited sharing class PortalReportsHelper {
 
             objMap.put(PortalConstants.KEY_CROP_YEAR, objApplication.Crop_Year__c);
             objMap.put(PortalConstants.KEY_IRC_SHORT_FORM, objApplication.Internal_Reference_Code__c);
-            objMap.put(PortalConstants.KEY_GROWMARK_UNIQUE_IDENTIFIER, objApplication.Growmark_Unique_Identifier__c);
+            objMap.put(PortalConstants.KEY_UNIQUE_IDENTIFIER, objApplication.Unique_Identifier__c);
 
             objMap.put(PortalConstants.KEY_GUARANTY, objApplication.Guarantee__c);
             objMap.put(PortalConstants.KEY_AVAILABLE, objApplication.Available__c);
@@ -461,7 +461,7 @@ public inherited sharing class PortalReportsHelper {
             objMap.put(PortalConstants.KEY_PURPOSE, objApplicationPricing.genesis__Rate_Card_Setup_Detail__r.Description__c);
             objMap.put(PortalConstants.KEY_CROP_YEAR, objApplicationPricing.genesis__Application__r.Crop_Year__c);
             objMap.put(PortalConstants.KEY_IRC_SHORT_FORM, objApplicationPricing.genesis__Application__r.Internal_Reference_Code__c);
-            objMap.put(PortalConstants.KEY_GROWMARK_UNIQUE_IDENTIFIER, objApplicationPricing.genesis__Application__r.Growmark_Unique_Identifier__c);
+            objMap.put(PortalConstants.KEY_UNIQUE_IDENTIFIER, objApplicationPricing.genesis__Application__r.Unique_Identifier__c);
             objMap.put(PortalConstants.KEY_GUARANTY, objApplicationPricing.genesis__Application__r.Guarantee__c);
             objMap.put(PortalConstants.KEY_AVAILABLE, PortalConstants.ZERO_VALUE);
             objMap.put(PortalConstants.KEY_RESERVED, PortalConstants.ZERO_VALUE);
