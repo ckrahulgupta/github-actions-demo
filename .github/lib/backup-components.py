@@ -3,10 +3,10 @@ import os, subprocess
 # constants
 ORG_ALIAS 			= os.environ['ORG_ALIAS']
 API_VERSION 		= os.environ['API_VERSION']
-# GIT_USER_EMAIL 		= os.environ['GIT_USER_EMAIL']
-# GIT_USER_NAME 		= os.environ['GIT_USER_NAME']
-GIT_USER_EMAIL 		= 'ckrahulgupta@users.noreply.github.com'
-GIT_USER_NAME 		= 'GithubActions'
+GIT_USER_EMAIL 		= os.environ['GIT_USER_EMAIL']
+GIT_USER_NAME 		= os.environ['GIT_USER_NAME']
+# GIT_USER_EMAIL 		= 'ckrahulgupta@users.noreply.github.com'
+# GIT_USER_NAME 		= 'GithubActions'
 BASE_BRANCH 		= os.environ['BASE_BRANCH']
 WORKSPACE 			= os.environ['GITHUB_WORKSPACE']
 
