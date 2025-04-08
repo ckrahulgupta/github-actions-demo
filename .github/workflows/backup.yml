@@ -9,8 +9,8 @@ name: backup
 # setting the trigger point of this workflow
 on:
   # workflow will run on pull request generation
-  schedule:
-   - cron: '* * * * *'
+  # schedule:
+  #  - cron: '* * * * *'
   #  - cron: '0 0 * * *'
 
   # run workflow from Actions tab
