@@ -19,7 +19,7 @@ on:
 # define the jobs
 jobs:
 
-  backup-preprod:
+  snapshot-staging:
     runs-on: ubuntu-latest
 
     # setting the environment
@@ -33,11 +33,12 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
     env:
-      BACKUP_BRANCH: backup
-      AUTH_URL: ${{ secrets.AUTH_URL }}
-      ORG_ALIAS: ${{ vars.ORG_ALIAS }}
-      API_VERSION: ${{ vars.API_VERSION }}
-      ROLLBACK: false
+      AUTH_URL:         ${{ secrets.AUTH_URL }}
+      ORG_ALIAS:        ${{ vars.ORG_ALIAS }}
+      API_VERSION:      ${{ vars.API_VERSION }}
+      BASE_BRANCH:      'backup'
+      GIT_USER_EMAIL:   41898282+github-actions[bot]@users.noreply.github.com
+      GIT_USER_NAME:    github-actions[bot]
 
     # define the steps for validation
     steps:
@@ -46,13 +47,7 @@ jobs:
       - name: Code Checkout
         uses: actions/checkout@v4
         with:
-          ref: 'backup'
-
-
-      # checkout to backup branch
-      - name: Checkout To Backup Branch
-        run: chmod +x ./.github/lib/checkout-branch.sh && ./.github/lib/checkout-branch.sh
-        shell: bash
+          ref: ${{ env.BASE_BRANCH }}
 
       # authenticate source org
       - name: Authenticate Org
