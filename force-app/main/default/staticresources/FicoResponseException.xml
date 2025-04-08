@@ -1,0 +1,372 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"><SOAP:Header/><SOAP:Body><ns2:ObtainDecisionDataResponse xmlns:ns2="http://www.liquidCredit.com/"><ns2:ObtainDecisionDataResult><FI_LiquidCredit APIVersion="2" customer_id="TheCoopFinanceAssoc" offering_id="14" product_category_id="2200" submission_id="3dd95fd4-bbc9-4f7e-b69b-145413ce8da0" submission_xref_id="20211118094147" timestamp="20231114 230145269 GMT" transaction_id="d3e1151b-8c18-4a91-9900-82c4377d49cb">
+  <loan_amount>20000</loan_amount>
+  <loan_purpose>Crop</loan_purpose>
+  <principal_list>
+    <principal_info customer_xref_id="57041" principalReportId="RPTID01">
+      <dataSourceList>
+        <dataSource code="XPN" noDataFlag="N" reportObtainedDate="20231114 230146473 GMT" requestStatus="C">
+          <response>
+            <printImage><![CDATA[TBD2 AFM 2530350    CHRISTIANSON,BLAIR A 390081443;CA-W5995 ST HWY 156/SHIOCTON 
+WI 54170;Y-02281991;RM-FE;RM-G;PARSED;VERIFY-DM/RM;RR-BOTH1;V-07/081;SSRV-ECNC;
+IPADDR-10.8.118.33;SSOUSERID-NETCONNECTPROD;
+Q-ECNC0202023111405014600CICSCSTGECNC0000000
+ 
+
+
+ 
+PAGE 1   DATE 11-14-2023  TIME 17:01:46  V001  TWI1
+ 
+ BLAIR A CHRISTIANSON             SS: 390-08-1443     E: CHRISTOP FARMS
+ 5995 STATE 156 HWY               DOB: 02/28/91       RPTD: 5-16 U
+ CHIOCTON WI 54170
+ RPTD: 10-23 U 3X                                     E: MILK-N-MORE HARVESTING
+ LAST SUB: 0203010                                    RPTD: 3-17 I
+ 
+*319 N CECIL ST
+ BONDUEL WI 541079207
+ RPTD: 6-18 TO 7-22 U 3X
+ 
+*W6590 ERB RD
+ SHIOCTON WI 541709679
+ RPTD: 8-10 TO 5-16 U 4X
+ 
+ ---------------------------- FRAUD SHIELD SUMMARY ----------------------------
+ INPUT SSN ISSUED 1990-1992
+ INQUIRY ADDRESS FIRST REPORTED < 90 DAYS
+ CURRENT ADDRES REPT BY TRADE OPEN<90 DAYS
+ FROM  8-01-23 INQ COUNT FOR SSN=1
+ FROM  8-01-23 INQ COUNT FOR ADDRESS=0
+ 
+ ------------------------------ PROFILE SUMMARY -------------------------------
+                                                                CNT 00/00/00/00
+ PUBLIC RECORDS-------0  PAST DUE AMT--------$0  INQUIRIES---2  SATIS ACCTS--13
+ INST/OTH BAL--------$0  SCH/EST PAY-------$102  INQS/6 MO---1  NOW DEL/DRG---0
+ R ESTATE BAL--$373,611  R ESTATE PAY----$3,232  TRADELINE--13  WAS DEL/DRG---0
+ TOT REV BAL-----$1,354  TOT REV AVAIL------95%  PAID ACCT---8  OLD TRADE--1-12
+ 
+ ------------------------------- SCORE SUMMARY --------------------------------
+ FICO SCORE 9 AUTO                    =   813    SCORE FACTORS: 33, 12, 05, 14
+ 
+ ----------------------------------- TRADES -----------------------------------
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+*SYNCB/MILLS FLEETFARM      8-19    $1,024-L    $1,351-H     PAID     CURR ACCT
+ 1124576 BC CRC REV   1  8-06-23                  8-23       (49) B000000000000
+ 422685100100               7-21                                   00000000000C
+ ** CLOSED DUE TO INACTIVITY **
+ 
+ CAPITAL CREDIT UNION       5-22   $40,419-O                 PAID     CURR ACCT
+ 1753750 FC SEC  60   1  8-15-22                  8-22       ( 2) BC
+ 1938541885                 8-22
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    CHRISTIANSON,BLAIR A 390081443;CA-W5995 ST HWY 156/SHIOCTON 
+ 
+
+
+
+
+
+ 
+PAGE 2   DATE 11-14-2023  TIME 17:01:46  V001  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ DISCOVER BANK              1-12    $1,800-L      $511-H     PAID     CURR ACCT
+ 3276502 BC CRC REV   1  1-03-21                  1-21       (99) B000000000000
+ 601100476794               7-19                                   0CCCCCC00000
+ 
+*CAPITAL ONE                6-14   $13,000-L    $2,203-H     PAID     CURR ACCT
+ 2218590 BC CRC REV   1  6-23-20                  6-20       (73) B000CCCCCCCC0
+ 5463256060008494           2-20                                   CCCCCCCCCCCC
+ ** ACCOUNT CLOSED AT CONSUMER'S REQUEST **
+ 
+*KOHLS/CAPONE              12-15    $1,000-L       $25-H     PAID     CURR ACCT
+ 1926781 DC CHG REV   1  6-12-20                  6-20       (54) B000000000000
+ 6393050819938531           5-18                                   00000000000C
+ ** CLOSED DUE TO INACTIVITY **
+ 
+ COVANTAGE CU               3-17   $13,889-O                 PAID     CURR ACCT
+ 1743370 FC AUT  60   5  1-31-19                  1-19       (23) BCCCCCCCCCCCC
+ 2415150001                 1-19                                   CCCCCCCCCC
+ 
+ COVANTAGE CU               4-16   $28,716-O                 PAID     CURR ACCT
+ 1743370 FC AUT  72   1 12-31-17                 12-17       (21) BCCCCCCCCCCCC
+ 564990001                 12-17                                   CCCCCCCC
+ 
+ FIRST MERIT BANK           2-16   $29,289-O                 PAID     CURR ACCT
+ 2103060 BB AUT  72   1  5-31-16                  5-16       ( 4) BCCC
+ 785045                     5-16
+ 
+ FNB OMAHA                  9-23   $13,500-L      $512-H     OPEN     CURR ACCT
+ 0203010 BC CRC REV   1 11-10-23      $512       11-23       ( 2) CC
+ 609990110821700           10-23       $40            
+ 
+ CAP1/MNRDS                 1-19    $5,500-L    $3,734-H     OPEN     CURR ACCT
+ 1942275 LZ CHG REV   1 11-03-23        $0       11-23       (58) 0000000000000
+ 6004300161900789           4-19                                   000000000000
+ 
+ COVANTAGE CU               8-22  $340,000-O                 OPEN     CURR ACCT
+ 1754970 FC R/C 30Y   1 10-31-23  $335,027       10-23       (15) CCCCCCCCCCCCC
+ 564995000822              10-23    $2,335                         CC
+ 
+ SYNCB/FURN                 4-19    $8,500-L    $4,396-H     OPEN     CURR ACCT
+ 2872750 FF CHG REV   1 10-20-23      $842       10-23       (55) CCCCCCCCCCCCC
+ 601919420508               9-23       $62                         CCCCCCCCCCCC
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    CHRISTIANSON,BLAIR A 390081443;CA-W5995 ST HWY 156/SHIOCTON 
+ 
+
+
+
+
+
+ 
+PAGE 3   DATE 11-14-2023  TIME 17:01:46  V001  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ COVANTAGE CU               6-18   $85,410-O                 OPEN     CURR ACCT
+ 1754970 FC R/C 15Y   1  1-31-22   $38,584        1-22       (44) CCCCCCCCCCCCC
+ 564991000618               1-22      $897                         CCCCCCCCCCCC
+ 
+ --------------------------------- INQUIRIES ----------------------------------
+ FNB OMAHA               9-06-23  0203040 BC            CRC 
+ XACTUS - AVANTUS        6-23-22  1973879 FR        UNK R/E 
+ 
+ --------------------------------- MESSAGES -----------------------------------
+  MSG 175: MODEL G BLOCKED
+ 
+  MSG 335: FE08TOO MANY INQUIRIES LAST 12 MONTHS
+ 
+ END -- EXPERIAN
+ 
+
+
+
+
+
+
+
+
+]]></printImage>
+          </response>
+        </dataSource>
+      </dataSourceList>
+      <first_name>Blair</first_name>
+      <middle_initial>A</middle_initial>
+      <last_name>Christianson</last_name>
+      <name_suffix/>
+      <SSN>390081443</SSN>
+      <current_address>
+        <address>W5995 St Hwy 156</address>
+        <city>Shiocton</city>
+        <state>WI</state>
+        <zip>54170</zip>
+      </current_address>
+      <decisionData>
+        <dataSourceAnalysisList>
+          <dataSourceAnalysis code="XPN">
+            <indicators>
+              <abnormalReportIndicator>S</abnormalReportIndicator>
+              <addressMismatchIndicator>N</addressMismatchIndicator>
+              <aliasIndicator>N</aliasIndicator>
+              <bankruptcyOnFileIndicator>N</bankruptcyOnFileIndicator>
+              <consumerStatementIndicator>N</consumerStatementIndicator>
+              <contactSubscriberIndicator>N</contactSubscriberIndicator>
+              <creditCounselingIndicator>N</creditCounselingIndicator>
+              <disputedAccountIndicator>N</disputedAccountIndicator>
+              <fileVariationIndicator>N</fileVariationIndicator>
+              <irregularReportDeceasedIndicator>N</irregularReportDeceasedIndicator>
+              <irregularReportManualFileIndicator>N</irregularReportManualFileIndicator>
+              <lostOrStolenCardIndicator>N</lostOrStolenCardIndicator>
+              <nameMismatchIndicator>N</nameMismatchIndicator>
+              <securityFrozenFileIndicator>N</securityFrozenFileIndicator>
+              <securityOfacIndicator>N</securityOfacIndicator>
+              <securityReportIndicator>04</securityReportIndicator>
+              <ssnVariationIndicator>N</ssnVariationIndicator>
+              <thinFileIndicator>N</thinFileIndicator>
+            </indicators>
+            <characteristics>
+              <avgMosInFile>68</avgMosInFile>
+              <avgMosInFileTLRptd0To2Mos>33</avgMosInFileTLRptd0To2Mos>
+              <highestUtilOnBankNatlRevTL>4</highestUtilOnBankNatlRevTL>
+              <lowestRating>012</lowestRating>
+              <lowestRatingIL>006</lowestRatingIL>
+              <lowestRatingOpndLast12Mos>SV0</lowestRatingOpndLast12Mos>
+              <lowestRatingOpndLast24Mos>002</lowestRatingOpndLast24Mos>
+              <lowestRatingOpndLast36Mos>002</lowestRatingOpndLast36Mos>
+              <lowestRatingRevOpen>006</lowestRatingRevOpen>
+              <maxDelqEver>8</maxDelqEver>
+              <maxDelqPR0To11Mos>7</maxDelqPR0To11Mos>
+              <mosSncMostRcnt30pDelq>-99000792</mosSncMostRcnt30pDelq>
+              <mosSncMostRcnt60pDelq>-99000792</mosSncMostRcnt60pDelq>
+              <mosSncMostRcntDtOpnd>2</mosSncMostRcntDtOpnd>
+              <mosSncMostRcntFinTLOpnd>-99000792</mosSncMostRcntFinTLOpnd>
+              <mosSncMostRcntInq>2</mosSncMostRcntInq>
+              <mosSncOldestBankNatlRevOpenTLOpnd>142</mosSncOldestBankNatlRevOpenTLOpnd>
+              <mosSncOldestDtOpnd>142</mosSncOldestDtOpnd>
+              <netFrctIL>-99000752</netFrctIL>
+              <netFrctMtg>99</netFrctMtg>
+              <netFrctRev>5</netFrctRev>
+              <numBankNatlRevTL90PctRptd0To2Mos>0</numBankNatlRevTL90PctRptd0To2Mos>
+              <numBankNatlRevTLWBal75PctAmt>0</numBankNatlRevTLWBal75PctAmt>
+              <numCollection>0</numCollection>
+              <numDaysInq0to11MosExclLast30Days>1</numDaysInq0to11MosExclLast30Days>
+              <numFinTL>0</numFinTL>
+              <numInq0to11MosExclLast30Days>1</numInq0to11MosExclLast30Days>
+              <numInq0to5MosExclLast14Days>1</numInq0to5MosExclLast14Days>
+              <numInq0to5MosExclLast7Days>1</numInq0to5MosExclLast7Days>
+              <numPR>0</numPR>
+              <numRevOpenTLWBal>2</numRevOpenTLWBal>
+              <numRevTL30pDaysEver>0</numRevTL30pDaysEver>
+              <numRevTLWBal50PctAmt>0</numRevTLWBal50PctAmt>
+              <numTL>13</numTL>
+              <numTL30pDaysEverDerogPR>0</numTL30pDaysEverDerogPR>
+              <numTL60pDaysEverDerogPR>0</numTL60pDaysEverDerogPR>
+              <numTL90pDaysEverDerogPR>0</numTL90pDaysEverDerogPR>
+              <numTLOpnd3MosAndNotGT2x30Days>12</numTLOpnd3MosAndNotGT2x30Days>
+              <pctTLNeverDelq>100</pctTLNeverDelq>
+              <pctTLNowCurr>75</pctTLNowCurr>
+              <totBal>336381</totBal>
+              <totRevBal>1354</totRevBal>
+            </characteristics>
+            <score1 Code="FE" InquiryIndicator="I" Score="813">
+              <ReasonCode>33</ReasonCode>
+              <ReasonCode>12</ReasonCode>
+              <ReasonCode>05</ReasonCode>
+              <ReasonCode>14</ReasonCode>
+            </score1>
+          </dataSourceAnalysis>
+        </dataSourceAnalysisList>
+        <scoringList>
+          <scoring type="SBSS70">
+            <model>711</model>
+            <totalScore>208.0</totalScore>
+            <modelReasonList>
+              <modelReason>NH</modelReason>
+              <modelReason>CP</modelReason>
+              <modelReason>DE</modelReason>
+              <modelReason>UE</modelReason>
+            </modelReasonList>
+            <scoreReasonList>
+              <scoreReason>
+                <reasonCode>NH</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+              <scoreReason>
+                <reasonCode>CP</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+              <scoreReason>
+                <reasonCode>DE</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+              <scoreReason>
+                <reasonCode>UE</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+            </scoreReasonList>
+          </scoring>
+          <scoring type="BK10">
+            <model>777</model>
+            <totalScore>411.0</totalScore>
+            <modelReasonList>
+              <modelReason>CP</modelReason>
+              <modelReason>UE</modelReason>
+              <modelReason>UJ</modelReason>
+              <modelReason>UC</modelReason>
+            </modelReasonList>
+          </scoring>
+        </scoringList>
+      </decisionData>
+    </principal_info>
+  </principal_list>
+  <business_info business_xref_id="57041" ol_cb_score_cutoff="300" scoring_model_suite_type="700">
+    <business_legal_name>Christianson Blair A</business_legal_name>
+    <business_address>W5995 St Hwy 156</business_address>
+    <business_city>Shiocton</business_city>
+    <business_state>WI</business_state>
+    <business_zip>54170</business_zip>
+    <decisionData>
+      <scoringList>
+        <scoring type="SBSS70">
+          <model>711</model>
+          <totalScore>208.0</totalScore>
+          <modelReasonList>
+            <modelReason>NH</modelReason>
+            <modelReason>CP</modelReason>
+            <modelReason>DE</modelReason>
+            <modelReason>UE</modelReason>
+          </modelReasonList>
+          <scoreReasonList>
+            <scoreReason>
+              <reasonCode>NH</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+            <scoreReason>
+              <reasonCode>CP</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+            <scoreReason>
+              <reasonCode>DE</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+            <scoreReason>
+              <reasonCode>UE</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+          </scoreReasonList>
+        </scoring>
+        <scoring type="BK10">
+          <model>777</model>
+          <totalScore>411.0</totalScore>
+          <modelReasonList>
+            <modelReason>CP</modelReason>
+            <modelReason>UE</modelReason>
+            <modelReason>UJ</modelReason>
+            <modelReason>UC</modelReason>
+          </modelReasonList>
+        </scoring>
+      </scoringList>
+    </decisionData>
+  </business_info>
+  <response_message_list transaction_status_code="001" transaction_status_text="Successful - warnings">
+    <message_info>
+      <message_code>0x80042796</message_code>
+      <message_source>PostProcessUtils:postProcessAPI2</message_source>
+      <message_text>TID:{d3e1151b-8c18-4a91-9900-82c4377d49cb} - principal 1, XPN - Abnormal Bureau Report Warning</message_text>
+    </message_info>
+    <message_info>
+      <message_code>0x80042845</message_code>
+      <message_source>PostProcessUtils:postProcessAPI2</message_source>
+      <message_text>TID:{d3e1151b-8c18-4a91-9900-82c4377d49cb} - principal 1, XPN - Security Report Warning</message_text>
+    </message_info>
+  </response_message_list>
+</FI_LiquidCredit>
+</ns2:ObtainDecisionDataResult></ns2:ObtainDecisionDataResponse></SOAP:Body></SOAP:Envelope>

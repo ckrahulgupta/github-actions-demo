@@ -1,0 +1,40 @@
+<!--
+  @description       : VF Page for Early Notice
+  @author            : Simran
+  @group             : 
+  @last modified on  : 05-04-2023
+  @last modified by  : Simran
+-->
+<apex:page controller="GenerateNTBController" lightningStylesheets="true" >    
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages id="showmsg"></apex:pageMessages>
+            Crop Year
+            <div style="margin-top: 0.5%" >   
+            <apex:inputText value="{!cropYear}" id="cropYear" />
+            <apex:commandButton disabled="{!disableSaveButton}" action="{!searchApp}" value="Search" >
+                <apex:actionSupport event="onclick" />
+            </apex:commandButton>
+            <right  style="float:right">
+                <apex:commandButton disabled="{!disableSaveButton}" value="Generate NTB" id="NTB" rerender="showmsg" >
+                <apex:actionSupport event="onclick" action="{!processNTB}"/></apex:commandButton>
+            </right> 
+            <div><br/></div>
+            </div>
+            <apex:pageBlockTable value="{!selectApps}" var="app">
+                <apex:column headerValue="">
+                    <apex:inputCheckbox value="{!app.appIdFlag}"/>
+                </apex:column>
+                <apex:column headerValue="Application Id" value="{!app.appName}"/>
+                <apex:column headerValue="CIF" value="{!app.cif}"/>
+                <apex:column headerValue="Loan Number" value="{!app.loanNumber}"/>
+                <apex:column headerValue="Legal Name" value="{!app.legalName}"/>
+                <apex:column headerValue="Buyer's Name" value="{!app.buyersName}"/>
+                <apex:column headerValue="City" value="{!app.city}"/>
+                <apex:column headerValue="State" value="{!app.state}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    
+        <div id="err1"></div>
+    </apex:form>
+</apex:page>

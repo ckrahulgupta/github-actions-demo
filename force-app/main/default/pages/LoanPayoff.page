@@ -1,0 +1,101 @@
+<!--
+  @description       : 
+  @author            : Ayush Kumar Singh
+  @group             : 
+  @last modified on  : 05-12-2024
+  @last modified by  : Soumik Pattanayak
+-->
+
+<apex:page controller="LoanPayoffController" renderAs="pdf">
+    <div style="font-family:sans-serif;text-align:center">
+        <div style="text-align: center">
+            <apex:image id="cfaLogo" value="{!IF(coopType=='Growmark',$Resource.agriFinancePortalLogo, logo)}" height="150" />
+        </div>
+        <div>
+            <h3 style="margin-bottom:0px">Loan Payoff</h3>
+            <table style="font-size:80%;margin:auto">
+                <tr>
+                    <td><b>Date Printed: </b></td>
+                    <td>
+                        <b><apex:outputText value="{!todayDate}" /></b>
+                    </td>
+                </tr>
+            </table>
+            <div style="display:flex;font-size:105%; padding:50px">
+                <apex:outputText value="{!name}"/>
+                <br/>
+                <apex:outputPanel rendered="{!(principal != null)}"> 
+                    <apex:repeat value="{!principal}" var="pL">
+                        <apex:outputText value="{!pL.clcommon__Account__r.Name} "/>
+                    </apex:repeat>
+                <br/>
+                </apex:outputPanel>
+                <apex:outputText value="{!street}" />
+                <br/>
+                <apex:outputText value="{!city}" />
+            </div>
+            <div style="font-size:95%; padding-top:50px; ">
+                <table style="width:65%; margin:auto;">
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Loan Number</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!loanNumber}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Short Name</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!name}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Loan Date</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!noteDate}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Maturity Date</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!maturityDate}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Payoff Date</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!payOffDate}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Per Diem</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!perDiem}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:30px; text-align:left;">Principal Balance</td>
+                        <td style="padding-bottom:30px; text-align:right;">
+                            <apex:outputText value="{!principalBalance}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom:15px;text-align:left;">Accrued Interest</td>
+                        <td style="padding-bottom:15px;text-align:right;">
+                            <apex:outputText value="{!interestAccrued}" />
+                        </td>
+                    </tr>
+                </table>
+                <div style='height:0px;border:1px solid black;width:70%;margin:auto'></div>
+                <table style="width:65%; margin:auto;">
+                    <tr>
+                        <td style="padding-top:15px;text-align:left;">Payoff Amount</td>
+                        <td style="padding-top:15px;text-align:right;">
+                            <apex:outputText value="{!payOffAmount}" />
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</apex:page>

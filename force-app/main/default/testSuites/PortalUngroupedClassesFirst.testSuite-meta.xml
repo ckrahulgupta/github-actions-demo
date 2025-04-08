@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>PortalApplicationOriginationHelperTest</testClassName>
+    <testClassName>PortalGrowmarkGrowerVerificationAPITest</testClassName>
+    <testClassName>PortalHelperTest</testClassName>
+    <testClassName>PortalSavePaymentReceiptCommentAPITest</testClassName>
+    <testClassName>TestPortalFetchCongaTemplateAPI</testClassName>
+    <testClassName>TestPortalMaturityDateChangeRequestAPI</testClassName>
+    <testClassName>TestPortalPendingItemsAPI</testClassName>
+    <testClassName>TestPortalSavePotentialBuyerAPI</testClassName>
+    <testClassName>TestPortalSaveSigningMethodAPI</testClassName>
+</ApexTestSuite>

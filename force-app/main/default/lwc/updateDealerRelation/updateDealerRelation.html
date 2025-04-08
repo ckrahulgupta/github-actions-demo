@@ -1,0 +1,46 @@
+<!--
+  @description       : HTML Class for UpdateDealerRelation LWC 
+  @author            : Simran
+  @group             : 
+  @last modified on  : 04-12-2024
+  @last modified by  : Ayan Bhowmik
+-->
+<template>
+  <div class="customCard">
+    <lightning-card title="Modify Dealer Relation">
+
+      <div class="accountName">
+        <lightning-input
+            label="Account Name"
+            value={dealerContactName}
+            variant="label-inline"
+            disabled
+        ></lightning-input>
+      </div>
+      <div class="dealerName">
+        <lightning-combobox
+            label="Dealer Name"
+            value={selectedAccountId}
+            options={accountOptions}
+            onchange={handleAccountChange}
+            variant="label-inline"
+        ></lightning-combobox>
+      </div>
+      <div class="noteForChangingRoles">
+        <p>Choose a role from the Available Roles list and add it to the Assigned Roles list to establish a relation. Note that removing a role from the Assigned Role list will delete the relation.</p>
+      </div>
+      <div class="entityrole">
+        <lightning-dual-listbox
+          source-label="Available Roles" 
+          selected-label="Assigned Roles" 
+          options={entityOptions}
+          value={existingRelationship}
+          onchange={handleRelationshipChange}
+        ></lightning-dual-listbox>
+        </div>
+      <p class="buttonContainer" align="right">
+        <lightning-button class ="saveBtn" label="Save" onclick={handleSave} disabled={isError}></lightning-button>
+      </p>
+    </lightning-card>
+  </div>
+</template>

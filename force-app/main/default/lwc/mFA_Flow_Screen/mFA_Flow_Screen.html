@@ -1,0 +1,14 @@
+<template>
+    <div class="mainContainer">
+        <div class="headingContainer">
+            <p>Verify Your Identity</p>
+        </div>
+        <div class="displayMessageContainer">
+            <p>A verification code has been sent to your registered mobile number.</p>
+            <p>Please enter the code in the field below.</p>
+        </div>
+        <div class="inputContainer">
+            <lightning-input placeholder="Enter verification code" class="input" label="Verification Code" required="true" value={otp} onchange={handleChange}></lightning-input>
+        </div>
+    </div>
+</template>

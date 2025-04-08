@@ -1,0 +1,27 @@
+<template>
+    <div class="container">
+        <div class={cssClassName}>
+                <lightning-layout horizontal-align="space">
+                    <lightning-layout-item size="4" padding="around-small">
+                        <template if:false={channelReadOnly}>
+                            <lightning-input name="eventChannel" variant="label-hidden" type="text" label="Event Channel" 
+                                value={eventChannelName}  onchange={handleInputChange}></lightning-input>
+                        </template>
+                        <template if:true={channelReadOnly}>
+                            <lightning-input class="slds-text-color_success" name="eventChannel" variant="label-hidden" type="text" label="Event Channel" 
+                                value={eventChannelName}  onchange={handleInputChange} read-only></lightning-input>
+                        </template>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" alignment-bump="left">
+                        <lightning-button-group>
+                            <lightning-button onclick={toggleMute} icon-name={muteIcon} label={muteLabel} variant={muteButtonVariant}></lightning-button>
+                            <lightning-button onclick={clearAll} icon-name="utility:delete" label="Clear all" variant="border-filled"></lightning-button>
+                        </lightning-button-group>
+                    </lightning-layout-item>
+                </lightning-layout>
+        </div>
+        <div class="slds-container_fluid slds-scrollable_x content">
+            <lightning-tree-grid columns={columns} data={logsAsTree} key-field="RequestId__c" hide-checkbox-column="true"></lightning-tree-grid>
+        </div>
+    </div>
+</template>

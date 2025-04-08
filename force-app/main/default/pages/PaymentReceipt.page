@@ -1,0 +1,134 @@
+<!--
+  @description       : VF page for payment receipt
+  @author            : Sk Minsar
+  @group             : 
+  @last modified on  : 01-30-2025
+  @last modified by  : Ayush Kumar Singh
+-->
+
+<apex:page controller="PaymentReceiptController" renderAs="pdf">
+
+	<head>
+		<style>
+			table,
+			th,
+			td,
+			tr {
+				border-width: .5px;
+				border-color: black;
+				font-size: 14px;
+			}
+
+			td,
+			th {
+				padding: 8px;
+			}
+		</style>
+	</head>
+	<div style="font-family:sans-serif; background-size:cover">
+
+		<apex:image id="cfaLogo"
+			value="{!IF(pageParameters['coop_type'] == 'Growmark', $Resource.agriFinancePortalLogo, pageParameters['logo'])}"
+			height="100" />
+		<br></br>
+		<br></br>
+		<br></br>
+		<h4>
+			<apex:outputText value="{!IF(pageParameters['paymentMode'] == 'PRODUCT RETURN', 'Product Return', 'Loan')}" />&nbsp;
+			<apex:outputText value="{!IF(OR(pageParameters['paymentMode'] == 'ACH', pageParameters['paymentMode'] == 'DRAFT'), 'Advance ', IF(pageParameters['paymentMode'] == 'PRODUCT RETURN', '', 'Payment '))}" />
+			Confirmation
+		</h4>
+		<h5>
+			Grower Name:&nbsp;
+			<apex:outputText value="{!pageParameters['grower_name']}" escape="true" />
+		</h5>
+		<h5>
+			Loan #:&nbsp;
+			<apex:outputText value="{!pageParameters['loan_number']}" />
+		</h5>
+		<h5>
+			Payment Type:&nbsp;
+			<apex:outputText value="{!IF(pageParameters['paymentMode'] == 'PAYMENT', 'Payment', IF(pageParameters['paymentMode'] == 'MOBILE DEPOSIT', 'Mobile Deposit', IF(pageParameters['paymentMode'] == 'PRODUCT RETURN', 'Product Return', IF(pageParameters['paymentMode'] == 'DRAFT', 'Draft', 'ACH'))))}" />
+			&nbsp;By&nbsp;
+			<apex:outputText value="{!IF(pageParameters['is_paid_by_dealer'], 'Dealer', 'Grower')}" />
+		</h5>
+		<h5>
+			<apex:outputText value="{!IF(pageParameters['paymentMode'] == 'ACH', 'ACH', IF(pageParameters['paymentMode'] == 'DRAFT', 'Draft', IF(pageParameters['paymentMode'] == 'PRODUCT RETURN', 'Product Return', 'Payment')))}" />
+			&nbsp;Amount: $
+			<apex:outputText value="{!pageParameters['totalAmount']}" />
+		</h5>
+		<h5>
+			Date &amp; Time Initiated:&nbsp;
+			<apex:outputText value="{0, date, MM'/'dd'/'yyyy' at 'hh:mm a}">
+				<apex:param value="{!pageParameters['created_date']}" />
+			</apex:outputText>
+		</h5>
+		<h5>
+			Transaction #:&nbsp;
+			<apex:outputText value="{!pageParameters['transaction_number']}" />
+		</h5>
+		<apex:outputText rendered="{!pageParameters['show_comment']}">
+			<h5 style="overflow: hidden;">
+				Comments:&nbsp;
+				<apex:outputText style="float: right; width: 86%; border: 1px solid #000; padding: 5px; height: 5em; line-height: 1.5;"
+					value="{!pageParameters['comments']}" />
+			</h5>
+		</apex:outputText>
+
+		<table style="width:100%; margin-top: 50px;" border="1" cellpadding="8px" cellspacing="0px">
+			<tr style="font-family:sans-serif;text-align:center; background-color: #d0d0d0;">
+				<th><b>Loan # - Sub-Tranche</b></th>
+				<th><b>Description</b></th>
+				<th><b>Principal</b></th>
+				<th><b>Interest</b></th>
+				<th><b>Fees</b></th>
+				<th><b>Total</b></th>
+			</tr>
+			<apex:repeat var="eachTransaction" value="{!pageParameters['transactions']}">
+				<tr>
+					<td style="text-align: center">
+						<apex:outputText value="{!eachTransaction['loan_number']}" />
+					</td>
+
+
+					<td style="text-align: center">
+						<apex:outputText value="{!eachTransaction['description']}" />
+					</td>
+					<td style="text-align: center">
+						$
+						<apex:outputText value="{!eachTransaction['principal']}" />
+					</td>
+					<td style="text-align: center">
+						$
+						<apex:outputText value="{!eachTransaction['interest']}" />
+					</td>
+					<td style="text-align: center">
+						$
+						<apex:outputText value="{!eachTransaction['fees']}" />
+					</td>
+					<td style="text-align: center">
+						$
+						<apex:outputText value="{!eachTransaction['amount']}" />
+					</td>
+
+				</tr>
+			</apex:repeat>
+
+
+			<tr style="font-family:sans-serif;display:flex;justify-content: space-between;font-size:18px;">
+				<td colspan="5" style="text-align: left; background-color: #c0f0c8;">
+
+					Total&nbsp;
+
+					<apex:outputText value="{!IF(OR(pageParameters['paymentMode'] == 'PAYMENT', pageParameters['paymentMode'] == 'MOBILE DEPOSIT'), 'Payment', 'Amount')}" />
+				</td>
+
+				<td style="text-align:center">
+					<b>$
+						<apex:outputText value="{!pageParameters['totalAmount']}" />
+					</b>
+				</td>
+			</tr>
+		</table>
+	</div>
+</apex:page>

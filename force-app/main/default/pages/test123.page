@@ -1,0 +1,10 @@
+<apex:page >
+    
+    <div style="font-family:sans-serif; background-size:cover">
+
+
+
+		<apex:image value="/resource/marvel_logo"
+			height="100" />
+    </div>
+</apex:page>

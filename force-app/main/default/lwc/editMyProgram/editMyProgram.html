@@ -1,0 +1,92 @@
+<!--
+   @description       : 
+   @author            : Rakesh Saraf
+   @group             : 
+   @last modified on  : 01-16-2025
+   @last modified by  : Rakesh Saraf
+   -->
+   <template>
+    <lightning-card class="slds-var-p-around_xx-small">
+       <template if:true={myProgramData}>
+          <div class="slds-text-heading_medium slds-align_absolute-center slds-var-p-bottom_small">Edit {myProgramData.Name}</div>
+
+          <div class="slds-grid slds-wrap slds-gutters slds-var-p-around_x-large" >
+             <div class="slds-col">
+                <lightning-input label="Rate Card Name" value={myProgramData.Name} type="text"
+                   variant="label-inline"></lightning-input>
+                <lightning-input label="Closing Fee" value={myProgramData.Closing_Fee__c} type="text" disabled="true"
+                   variant="label-inline"></lightning-input>
+                <lightning-input label="Loan Fee Advanced On" value={myProgramData.Loan_Fee_Advanced_On__c} type="text" disabled="true"
+                   variant="label-inline"></lightning-input>
+                <lightning-input label="Dealer" value={myProgramData.Account__r.Name} type="text" disabled="true"
+                   variant="label-inline"></lightning-input>
+             </div>
+             <div class="slds-col">
+                <lightning-input label="Crop Year" value={myProgramData.Crop_Year__c} type="text" disabled="true"
+                   variant="label-inline"></lightning-input>
+                <lightning-input label="Payer of Loan Closing Fee" value={myProgramData.Payer_of_Loan_Closing_Fee__c} type="text" disabled="true"
+                   variant="label-inline"></lightning-input>
+                <lightning-input label="Dealer Participate on Closing Fee" value={myProgramData.Dealer_Participate_on_Closing_Fee__c} type="text" disabled="true"
+                   variant="label-inline"></lightning-input>
+             </div>
+          </div>
+       </template>
+       <!-- <template if:true={masterNoteRateData}>
+            <div class="slds-grid slds-wrap slds-gutters slds-var-p-around_x-large">
+                <template for:each={masterNoteRateData} for:item="eachNote">
+                    <div class="slds-col slds-size_1-of-1" key={eachNote}>
+                        <h3 class="section-title slds-var-p-around_small"><strong>{eachNote.Name}</strong></h3>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1" key={eachNote.Id}>
+                        <lightning-input class="slds-var-p-left_x-small" type="checkbox" label="Assign billing date?"
+                        checked={eachNote.isChecked} onchange={handleCheckboxChange} data-id={eachNote.Id}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 " key={eachNote}>
+                        <lightning-input value={eachNote.description} type="text"
+                        class="slds-var-p-left_x-small"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 " key={eachNote.Id}>
+                        <template lwc:if={eachNote.isChecked}>
+                        <lightning-input type="date" value={eachNote.billingDate} placeholder="Billing Date" class="slds-var-p-right_x-small"></lightning-input>
+                        </template>
+                    </div>
+                    <div class="table-container slds-col slds-size_1-of-1 slds-var-p-left_x-large slds-var-p-right_x-large"
+                        key={eachNote.Id}>
+                        <lightning-datatable key-field="id" data={eachNote.data} columns={columns}></lightning-datatable>
+                    </div>
+                </template>
+            </div>
+        </template> -->
+       <template if:true={rateCardSetupDetailsList}>
+            <div class="slds-grid slds-wrap slds-gutters slds-var-p-around_x-large">
+                <template for:each={rateCardSetupDetailsList} for:item="eachNote">
+                    <div class="slds-col slds-size_1-of-1" key={eachNote}>
+                        <h3 class="section-title slds-var-p-around_small"><strong>{eachNote.Name}</strong></h3>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1" key={eachNote.Id}>
+                        <lightning-input class="slds-var-p-left_x-small" type="checkbox" label="Assign billing date?"
+                        checked={eachNote.Has_Billing_Date__c} onchange={handleCheckboxChange} data-id={eachNote.Id}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 " key={eachNote}>
+                        <lightning-input value={eachNote.Description__c} type="text"
+                        class="slds-var-p-left_x-small"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 " key={eachNote}>
+                        <template lwc:if={eachNote.Has_Billing_Date__c}>
+                        <lightning-input type="date" value={eachNote.Billing_Date__c} placeholder="Billing Date" class="slds-var-p-right_x-small"></lightning-input>
+                        </template>
+                    </div>
+                    <div class="table-container slds-col slds-size_1-of-1 slds-var-p-left_x-large slds-var-p-right_x-large"
+                        key={eachNote.Id}>
+                        <lightning-datatable key-field="id" data={eachNote.StepRates} columns={columns}></lightning-datatable>
+                    </div>
+                </template>
+            </div>
+        </template>
+       <div class="button-container slds-col slds-size_1-of-1 slds-text-align_right slds-var-p-right_xx-large">
+          <lightning-button label="Save" variant="brand"></lightning-button>
+       </div>
+    </lightning-card>
+ </template>

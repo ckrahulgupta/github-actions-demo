@@ -1,0 +1,40 @@
+{
+    "status": {
+        "code": 200,
+        "message": "Success",
+        "executionTime": 657
+    },
+    "payload": {
+        "data": {
+            "LoanNumber": "343066041-A",
+            "ShortName": "BOOKINGTOCORELLC",
+            "LoanGroup": "INPUT",
+            "InterestPaidThrough": "05/18/2022",
+            "PrincipalPaidThrough": "05/18/2022",
+            "LoanDate": "05/19/2022",
+            "FeesDue": 0.0,
+            "LateCharges": 0.0,
+            "MaturityDate": "05/15/2023",
+            "PayoffDate": "06/10/2022",
+            "InterestRate": 7.0,
+            "PerDiem": 0.8166666667,
+            "PrincipalBalance": 4200.0,
+            "AccruedInterest": 15.51,
+            "PayoffAmount": 4215.51,
+            "Suspense": 0.0,
+            "ServicingFee": 0.0,
+            "UserDefinedLoanBalances": {
+                "UserDefinedLoanBalance1": 0.0,
+                "UserDefinedLoanBalance2": 0.0,
+                "UserDefinedLoanBalance3": 0.0,
+                "UserDefinedLoanBalance4": 0.0,
+                "UserDefinedLoanBalance5": 0.0,
+                "UserDefinedLoanBalance6": 0.0,
+                "UserDefinedLoanBalance7": 0.0,
+                "UserDefinedLoanBalance8": 0.0,
+                "UserDefinedLoanBalance9": 0.0,
+                "UserDefinedLoanBalance10": 0.0
+            }
+        }
+    }
+}

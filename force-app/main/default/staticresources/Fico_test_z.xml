@@ -1,0 +1,65 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"><SOAP:Header/><SOAP:Body><ns2:ObtainDecisionDataResponse xmlns:ns2="http://www.liquidCredit.com/"><ns2:ObtainDecisionDataResult><FI_LiquidCredit APIVersion="2" customer_id="TheCoopFinanceAssoc" offering_id="14" product_category_id="2200" submission_id="9c073fb8-6f17-448e-a72a-bbdac939a559" submission_xref_id="20211118094147" timestamp="20240212 212625215 GMT" transaction_id="ae0af937-d9af-43f6-95eb-162a0411aa39">
+  <loan_amount>9000</loan_amount>
+  <loan_purpose>Crop</loan_purpose>
+  <principal_list>
+    <principal_info customer_xref_id="57041" principalReportId="RPTID01">
+      <dataSourceList>
+        <dataSource code="XPN" noDataFlag="Y" reportObtainedDate="20240212 212628883 GMT" requestStatus="C">
+          <response>
+            <printImage/> 
+          </response>
+        </dataSource>
+      </dataSourceList>
+      <first_name>James</first_name>
+      <last_name>Patt</last_name>
+      <name_suffix/>
+      <SSN>666714588</SSN>
+      <current_address>
+        <address>1329 Wiley Oak Drive</address>
+        <city>Jarrettsville</city>
+        <state>MD</state>
+        <zip>21084</zip>
+      </current_address>
+      <decisionData>
+        <scoringList>
+          <scoring type="SBSS70">
+            <model>199</model>
+            <totalScore>998</totalScore>
+            <modelReasonList/>
+            <scoreReasonList/>
+          </scoring>
+        </scoringList>
+      </decisionData>
+    </principal_info>
+  </principal_list>
+  <business_info business_xref_id="57041" ol_cb_score_cutoff="300" scoring_model_suite_type="700">
+    <business_legal_name>fig Ventures</business_legal_name>
+    <business_address>1329 Wiley Oak Drive Next to D</business_address>
+    <business_city>Jarrettsville</business_city>
+    <business_state>MD</business_state>
+    <business_zip>21084</business_zip>
+    <decisionData>
+      <scoringList>
+        <scoring type="SBSS70">
+          <model>199</model>
+          <totalScore>998</totalScore>
+          <modelReasonList/>
+          <scoreReasonList/>
+        </scoring>
+      </scoringList>
+    </decisionData>
+  </business_info>
+  <response_message_list transaction_status_code="001" transaction_status_text="Successful - warnings">
+    <message_info>
+      <message_code>0x80042796</message_code>
+      <message_source>PostProcessUtils:postProcessAPI2</message_source>
+      <message_text>TID:{ae0af937-d9af-43f6-95eb-162a0411aa39} - principal 1, XPN - Abnormal Bureau Report Warning</message_text>
+    </message_info>
+    <message_info>
+      <message_code>0x80042845</message_code>
+      <message_source>PostProcessUtils:postProcessAPI2</message_source>
+      <message_text>TID:{ae0af937-d9af-43f6-95eb-162a0411aa39} - principal 1, XPN - Security Report Warning</message_text>
+    </message_info>
+  </response_message_list>
+</FI_LiquidCredit>
+</ns2:ObtainDecisionDataResult></ns2:ObtainDecisionDataResponse></SOAP:Body></SOAP:Envelope>

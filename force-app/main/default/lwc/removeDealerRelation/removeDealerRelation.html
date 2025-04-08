@@ -1,0 +1,19 @@
+<!--
+  @description       : HTML Class for RemoveDealerRelation LWC
+  @author            : Simran
+  @group             : 
+  @last modified on  : 02-22-2024
+  @last modified by  : Simran
+-->
+<template>
+  <lightning-card>
+    <div align="center">
+      <p class="confirmationtext">Are you sure?</p>
+        <p class="text">This action will delete the dealer contact immediately. You can't undo this action.</p>
+    </div>
+    <div class="card-buttons">
+      <lightning-button   label="Yes" onclick={handleYesBtn}></lightning-button>
+      <lightning-button  label="No" onclick={handleNoBtn}></lightning-button>
+    </div>
+</lightning-card>
+</template>

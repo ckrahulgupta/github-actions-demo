@@ -1,0 +1,21 @@
+.form-container {
+    margin-bottom: 20px;
+}
+.form-row {
+
+margin-bottom: 15px;
+}
+.form-row lightning-input {
+flex: 1;
+margin-right: 10px;
+}
+.section-title {
+margin-top: 20px;
+font-size: 1.2em;
+}
+.table-container {
+margin-top: 10px;
+}
+.button-container {
+margin-top: 20px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>CreateMyProgramHandlerTest</testClassName>
+    <testClassName>GMKPortalCreateMyProgramAPITest</testClassName>
+    <testClassName>GMKSaveRateCardDetailsHandlerTest</testClassName>
+    <testClassName>MyProgramHelperTest</testClassName>
+    <testClassName>MyProgramValidationHelperTest</testClassName>
+    <testClassName>MyProgramValidationUtilTest</testClassName>
+    <testClassName>PortalCloneMyProgramAPITest</testClassName>
+    <testClassName>PortalCreateMyProgramAPITest</testClassName>
+    <testClassName>SaveRateCardDetailsHandlerTest</testClassName>
+    <testClassName>TestApprovalOfMyProgramFromVF</testClassName>
+    <testClassName>TestPortalSaveRateCardDetailAPI</testClassName>
+</ApexTestSuite>

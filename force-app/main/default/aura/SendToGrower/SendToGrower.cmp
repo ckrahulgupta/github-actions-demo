@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : Soumik Pattanayak
+  @group             : 
+  @last modified on  : 27-12-2024
+  @last modified by  : Soumik Pattanayak
+-->
+<aura:component controller="EnableGrowerPortal" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="showSpinner" type="boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:if isTrue="{!v.showSpinner}">
+        <div class="slds-spinner_container">
+            <div class="slds-is-relative" style="min-height: 10vh;">
+            <lightning:spinner variant="brand" alternativeText="Loading" size="medium" />
+                <div class="slds-p-top_xx-large"></div>
+                <div class="slds-p-top_large"></div>
+            <p class="slds-text-align_center"> </p>
+            </div>
+        </div>      
+    </aura:if>
+</aura:component>

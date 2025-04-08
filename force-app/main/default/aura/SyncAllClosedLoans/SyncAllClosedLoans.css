@@ -1,0 +1,14 @@
+.THIS.center {
+  /* text-align: center; */
+  font-size: 14px; 
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 24px !important;
+}
+.THIS.border {
+  border-bottom: 1.5px Solid  rgb(229 229 229);
+  padding-left: 16px;
+  padding-right: 16px;
+}

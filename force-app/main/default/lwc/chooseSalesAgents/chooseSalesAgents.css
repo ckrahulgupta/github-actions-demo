@@ -1,0 +1,44 @@
+.checkBoxContents {
+    padding-left: 1.4rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #5959593d;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cancelBtn{
+    padding-right: 1rem;
+   
+}
+
+.buttonContainer {
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+}
+
+
+/* .THIS .checkBoxContents .slds-checkbox .slds-form-element__label {
+    font-size: 2rem !important;
+} */
+
+/* .slds-form-element__label {
+    font-weight: bolder !important;
+    font-size: 3rem !important;
+}
+
+
+.slds-form-element__control span label span.slds-form-element__label {
+    font-size: 3rem !important;
+} */
+
+.THIS .slds-form-element__label{
+    font-size: 5rem !important;
+}
+
+.buttonContainer[c-chooseSalesAgents_chooseSalesAgents] {
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+}

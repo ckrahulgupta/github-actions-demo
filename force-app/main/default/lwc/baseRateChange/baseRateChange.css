@@ -1,0 +1,33 @@
+.buttonContainer {
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.6rem;
+    border-top: 1px solid #5959593d;
+    margin-top:1.5rem;
+}
+.entityrole {
+    width: 24rem;
+    margin-left: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.indexRate{
+    width: 24rem;
+    margin-top: 0.7;
+    margin-left: 0.8rem;
+}
+.selectLabel{
+    width: 24rem;
+    margin-left: 0.8rem;
+}
+:host {
+    --sds-c-form-label_font-size: 25px; 
+}
+.customCard{
+    padding-top: 1.2rem;
+    height: 245px;
+    border: none
+}
+.slds-error{
+    color: #B22222 !important;
+    padding-left: 8.25rem;
+  }

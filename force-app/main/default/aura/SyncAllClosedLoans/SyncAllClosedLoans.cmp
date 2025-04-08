@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : Subham Nandi
+  @group             : 
+  @last modified on  : 03-03-2023
+  @last modified by  : Subham Nandi
+  Modifications Log 
+  Ver   Date         Author         Modification
+  1.0   01-03-2023   Subham Nandi   Initial Version
+-->
+<aura:component controller="SyncAllClosedLoans" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global">
+  <aura:attribute name="showSuccess" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:if isTrue="{!v.showSuccess}">
+        
+        <div class="center">Syncing of all Closed Loans have started in the background. It will be completed in sometime.</div>
+        <div class="border"></div>
+    </aura:if>
+    
+</aura:component>

@@ -1,0 +1,36 @@
+.THIS h5 {
+    font-size: 14px;
+    color: #536045;
+}
+
+.THIS table tr td, 
+.THIS table tr th {
+    line-height: 16px;
+}
+
+.THIS.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.THIS.btn-wrapper button {
+    flex: 1 !important;
+    font-size: 14.5px;
+    font-weight: 400;
+    padding: 0;
+}
+.THIS.btn-wrapper:first-child {
+    padding-bottom: 2px;
+}
+.THIS.btn-wrapper:last-child {
+    padding-top: 2px;
+}
+
+.THIS.btn-wrapper button:nth-child(2) {
+    margin-left: 15px !important;
+}
+
+.THIS.loader {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

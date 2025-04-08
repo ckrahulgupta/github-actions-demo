@@ -1,0 +1,72 @@
+<!--
+  @description       : 
+  @author            : Tuhin Bhunia
+  @group             : 
+  @last modified on  : 04-02-2025
+  @last modified by  : Tuhin Bhunia
+-->
+<apex:page showHeader="false" 
+           sidebar="false" 
+           standardStylesheets="false" 
+           applyHtmlTag="false" 
+           applyBodyTag="false" 
+           docType="html-5.0"
+           controller="clcommon.PortalActions">
+    
+    <apex:include pageName="clcommon__ResolveNamespace" />
+    <html>
+        <head>
+            <meta name="viewport" 
+                content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+            
+            <!-- css -->
+            <!-- for dev -->
+            <!-- <apex:stylesheet value="http://localhost:3000/dist/css/style.css" /> -->
+            
+            <!-- for prod -->
+            <apex:stylesheet value="{!URLFOR($Resource.gmk_dealerPortalCSS)}" />
+        </head>
+        <body>
+            <!-- navigation structure name include -->   
+            <clcommon:IncludePortal2 navName="gmk_dealer_portal" theme="mui"></clcommon:IncludePortal2>
+        </body>
+
+        <!-- js -->
+        <apex:includeScript loadOnReady="true" 
+                            value="https://code.jquery.com/jquery-3.6.0.min.js"/>
+        <apex:includeScript loadOnReady="true" 
+                            value="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"/>
+        <apex:includeScript loadOnReady="true" 
+                            value="https://cdn.jsdelivr.net/npm/chart.js"/>
+        <apex:includeScript loadOnReady="true" 
+                            value="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8mzJmsYY_JvBcdApE75Id-Wq11bikIoE&libraries=places&v=3.53"/>
+
+        <!-- for dev -->
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="http://localhost:3000/dist/js/smartystreets.js"/> -->
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="http://localhost:3000/dist/js/utils.js"/> -->
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="http://localhost:3000/dist/js/indicator.js"/> -->
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="http://localhost:3000/dist/js/reportsfilter.js"/> -->
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="http://localhost:3000/dist/js/paymentspread.js"/> -->
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="http://localhost:3000/dist/js/eventhandler.js"/> -->
+
+        <!-- for prod -->
+        <apex:includeScript loadOnReady="true" 
+                            value="{!URLFOR($Resource.gmk_dealerPortalIndicatorJS)}"/>
+        <!-- <apex:includeScript loadOnReady="true" 
+                            value="{!URLFOR($Resource.gmk_dealerPortalSmartyStreetsJS)}"/> -->
+        <apex:includeScript loadOnReady="true" 
+                            value="{!URLFOR($Resource.gmk_dealerPortalUtilsJS)}"/>
+        <apex:includeScript loadOnReady="true" 
+                            value="{!URLFOR($Resource.gmk_dealerPortalReportsFilterJS)}"/>
+        <apex:includeScript loadOnReady="true" 
+                            value="{!URLFOR($Resource.gmk_dealerPortalPaymentSpreadJS)}"/>
+        <apex:includeScript loadOnReady="true" 
+                            value="{!URLFOR($Resource.gmk_dealerPortalEventHandlerJS)}"/>
+    </html>
+</apex:page>

@@ -1,0 +1,13 @@
+<!--
+  @description       : 
+  @author            : iAyush
+  @group             : 
+  @last modified on  : 18-11-2022
+  @last modified by  : Subham Nandi
+-->
+<apex:page standardController="genesis__Applications__c" extensions="GenerateNTBTemplate" action="{!generateSummaryPDF}">
+<apex:form >
+  <apex:pageMessages />
+  <apex:inputHidden value="{!genesis__Applications__c.Id}"/>
+</apex:form>
+</apex:page>

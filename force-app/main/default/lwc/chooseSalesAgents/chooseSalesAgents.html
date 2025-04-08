@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : Krishanu Chinya
+  @group             : 
+  @last modified on  : 11-16-2023
+  @last modified by  : Krishanu Chinya
+-->
+<template>
+    <div class="mainContainer">
+        <lightning-card class="checkBoxMainContainer" title="Select the Sales Agents" icon-name="custom:custom14">
+            <lightning-checkbox-group 
+            class="checkBoxContents slds-text-heading_medium" 
+            name="Please select all the sales agents you want to assign to the sales agent admin"
+            label="Please select all the sales agents you want to assign to the sales agent admin"
+            options={mapData}
+            value={value}
+            onchange={handleChange}></lightning-checkbox-group>
+    
+            <p class="buttonContainer" align="right">
+                <lightning-button class ="saveBtn" label="Save" onclick={handleSave}></lightning-button>
+            </p>
+    
+        </lightning-card>
+    </div>
+</template>

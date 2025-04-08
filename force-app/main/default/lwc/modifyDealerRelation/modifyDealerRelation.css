@@ -1,0 +1,40 @@
+.buttonContainer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #5959593d;
+}
+.radioButtonContents {
+    padding-left: 1.4rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #5959593d;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row; 
+}
+.mainContainer{
+    padding-left: 1.4rem;
+    padding-right: 1.2rem;
+    padding-bottom: 0.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: darkolivegreen;
+}
+.radio-container{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin:0 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    
+}
+.radio-box{
+display:flex;
+justify-content: center;
+}
