@@ -1,7 +1,7 @@
 ####################################################
 ########## Author:          Rahul Gupta ############
 ########## Created At:      08-11-2024  ############
-########## Last Updated At: 08-11-2024  ############
+########## Last Updated At: 08-04-2025  ############
 ####################################################
 
 name: backup
@@ -36,9 +36,9 @@ jobs:
       AUTH_URL:         ${{ secrets.AUTH_URL }}
       ORG_ALIAS:        ${{ vars.ORG_ALIAS }}
       API_VERSION:      ${{ vars.API_VERSION }}
-      BASE_BRANCH:      'backup'
-      GIT_USER_EMAIL:   41898282+github-actions[bot]@users.noreply.github.com
-      GIT_USER_NAME:    github-actions[bot]
+      BASE_BRANCH:      backup/staging
+      GIT_USER_EMAIL:   rahulgupta@CKMAC71.local
+      GIT_USER_NAME:    GitHubActions
 
     # define the steps for validation
     steps:
