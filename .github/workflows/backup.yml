@@ -64,3 +64,49 @@ jobs:
       - name: Backup Components
         run: chmod +x ./.github/lib/backup-components.py && python3 .github/lib/backup-components.py
         shell: bash
+
+  snapshot-production:
+    runs-on: ubuntu-latest
+
+    # setting the environment
+    # environment: preprod
+
+    # pass docker hub credentials to load the dependencies
+    container:
+      image: ${{ vars.DOCKER_IMAGE }}
+      credentials:
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+    env:
+      AUTH_URL:         ${{ secrets.AUTH_URL }}
+      ORG_ALIAS:        ${{ vars.ORG_ALIAS }}
+      API_VERSION:      ${{ vars.API_VERSION }}
+      BASE_BRANCH:      backup/production
+      GIT_USER_EMAIL:   rahulgupta@CKMAC71.local
+      GIT_USER_NAME:    GitHubActions
+
+    # define the steps for validation
+    steps:
+
+      # perform code checkout so that github actions can access it
+      - name: Code Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BASE_BRANCH }}
+          ssh-key: ${{ secrets.PRIVATE_DEPLOY_KEY }}
+
+      # authenticate source org
+      - name: Authenticate Org
+        run: chmod +x ./.github/lib/authenticate-org.sh && ./.github/lib/authenticate-org.sh
+        shell: bash
+
+      # retrieve all the components from preprod org
+      - name: Retrieve Components
+        run: chmod +x ./.github/lib/retrieve-components.py && python3 .github/lib/retrieve-components.py
+        shell: bash
+
+      # commit and push all the components to the preprod-backup branch
+      - name: Backup Components
+        run: chmod +x ./.github/lib/backup-components.py && python3 .github/lib/backup-components.py
+        shell: bash
