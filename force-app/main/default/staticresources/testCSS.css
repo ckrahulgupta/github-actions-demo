@@ -1,0 +1,74 @@
+div[data-style-stage-name="accountpage"] div[data-style-actor-name="accountlist"]
+
+
+div.MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div{
+    
+    
+    margin:40px;
+    margin-bottom:0px !important;
+    
+}
+div.MuiPaper-root.MuiPaper-elevation2.MuiPaper-rounded > div >div.record-content{
+    columns:2;
+    padding:20px;
+    
+}
+div[data-style-field-name="clcommon__Email__c"] {
+   
+    margin-top:10px;
+    
+}
+table.MuiTable-root{
+
+    
+ }
+div.MuiToolbar-root.MuiToolbar-regular.toolbar-at-bottom.col-1.equal-width-upload-actions.MuiToolbar-gutters{
+  margin-top:0px;
+    margin-bottom:auto;
+}
+ .MuiTable-root .MuiTableRow-root:nth-child(odd) {
+    background-color: white;
+     border-left:1px solid grey;
+    border-right:1px solid grey;
+     border-bottom:0.5px solid grey;
+    
+}
+.MuiTable-root .MuiTableRow-root:nth-child(even) {
+    background-color: rgba(240, 199, 165, 0.3);  
+     border-left:1px solid grey;
+    border-right:1px solid grey;
+     border-bottom:0.5px solid grey;
+}
+.MuiTableRow-root{
+    
+}
+.MuiTableCell-root{
+   border-left:1px solid grey;
+}
+thead.MuiTableHead-root >tr.MuiTableRow-root.MuiTableRow-head{
+  background-color:rgba(191, 199, 172, 0.59);
+    border:none ;
+    border-right:1px solid grey;
+    
+}
+span.material-icons.MuiIcon-root{
+  color:brown;
+}
+th.MuiTableCell-root.MuiTableCell-head{
+    border-left:none;
+}
+
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.action.position-default.MuiButton-containedSizeLarge.MuiButton-sizeLarge{
+  
+}
+
+div.MuiGrid-root.smallFont.outlinedVariant.string.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-12 > div.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginNormal.MuiFormControl-fullWidth{
+
+    width:80%;
+    
+} 
+h1.MuiTypography-root.title.MuiTypography-h1.MuiTypography-gutterBottom{
+ color:green;
+  font-family:'sans-serif';
+}

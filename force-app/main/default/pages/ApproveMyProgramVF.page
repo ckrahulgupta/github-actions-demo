@@ -1,0 +1,5 @@
+<apex:page standardController="genesis__Rate_Card_Setup_Header__c" extensions="ApprovalOfMyProgramFromVF" action="{!approve}">
+    <apex:form >
+<apex:inputHidden value="{!genesis__Rate_Card_Setup_Header__c.Id}"/>
+</apex:form>
+</apex:page>

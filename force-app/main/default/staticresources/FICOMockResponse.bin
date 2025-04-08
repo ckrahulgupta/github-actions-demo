@@ -1,0 +1,394 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:ObtainDecisionDataResponse xmlns:ns2="http://www.liquidCredit.com/"><ns2:ObtainDecisionDataResult>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;FI_LiquidCredit APIVersion="2" customer_id="TheCoopFinanceAssoc" offering_id="14" product_category_id="2200" submission_id="6d0ac587-8698-4e9d-a927-d60d62422f59" submission_xref_id="20211118094147" timestamp="20211222 134649901 GMT" transaction_id="383abd78-bd41-4561-bac8-ac16341de6d2"&gt;
+  &lt;loan_amount&gt;9000&lt;/loan_amount&gt;
+  &lt;loan_purpose&gt;Crop&lt;/loan_purpose&gt;
+  &lt;principal_list&gt;
+    &lt;principal_info customer_xref_id="57041" principalReportId="RPTID01"&gt;
+      &lt;dataSourceList&gt;
+        &lt;dataSource code="XPN" noDataFlag="N" reportObtainedDate="20211222 134653866 GMT" requestStatus="C"&gt;
+          &lt;response&gt;
+            &lt;printImage&gt;&lt;![CDATA[TBD2 AFM 2530350    WHELAN,JAMES R 666714588;CA-2428 10TH AVE W/SEATTLE WA 
+98119;PH-3084723253;Y-08301963;RM-FE;RM-G;PARSED;VERIFY-DM/RM;RR-BOTH1;V-07/081;
+SSRV-ECNC;IPADDR-10.8.112.23;SSOUSERID-COOPFIN;
+Q-ECNC0202021122207465303CICSCSTGECNC0000000
+ 
+
+
+ 
+PAGE 1   DATE 12-22-2021  TIME  7:46:53  V001  TWA1
+ 
+ JAMES R WHELAN                   SS: 666-71-4588     E: FC TUCKER CO IN
+ 2428 10TH AVE W                  DOB: 08/30/63       RPTD: 12-12 I
+ SEATTLE WA 981192525
+ RPTD: 6-16 TO 8-21 U
+ LAST SUB: 1223850  
+ 
+*7554 18TH AVE NE
+ SEATTLE WA 981154424
+ RPTD: 1-13 TO 1-16 U
+ 
+*4016 8TH AVE NE APT 203
+ SEATTLE WA 981056444
+ RPTD: 4-12 TO 9-15 U
+ 
+ JAMES R WHELAN JR, BEAUCHAMP WHELAN
+ 
+ ---------------------------- FRAUD SHIELD SUMMARY ----------------------------
+ INPUT SSN ISSUED 1936-1952
+ INQUIRY AGE YOUNGER THAN SSN ISSUE DATE
+ TELEPHONE NUMBER INCONSISTENT W/ADDRESS
+ FROM  9-01-21 INQ COUNT FOR SSN=0
+ FROM  9-01-21 INQ COUNT FOR ADDRESS=0
+ 
+ ------------------------------ PROFILE SUMMARY -------------------------------
+                                                                CNT 04/00/00/01
+ PUBLIC RECORDS-------0  PAST DUE AMT---$12,260  INQUIRIES---9  SATIS ACCTS--11
+ INST/OTH BAL---$29,519  SCH/EST PAY-------$897+ INQS/6 MO---0  NOW DEL/DRG---2
+ R ESTATE BAL---$59,143  R ESTATE PAY------$563  TRADELINE--14  WAS DEL/DRG---1
+ TOT REV BAL-----$1,280  TOT REV AVAIL------28%  PAID ACCT---7  OLD TRADE--3-10
+ 
+ ------------------------------- SCORE SUMMARY --------------------------------
+ FICO SCORE 9 AUTO                    =   553    SCORE FACTORS: 39, 13, 14, 18
+ FICO COLLECTION SCORE                =   281    SCORE FACTORS: NONE
+ 
+ ----------------------------------- TRADES -----------------------------------
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+*NUVELL                     7-20   $19,094-O             COLLACCT    30 DAY DEL
+ 1538490 FA AUT  72   1  7-28-21   $10,814        7-21       (12) G--1CCCCCCCC
+ 45940283324                3-21               $11,621
+ ** AFFECTED BY NATURAL OR DECLARED DISASTER **
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    WHELAN,JAMES R 666714588;CA-2428 10TH AVE W/SEATTLE WA 
+ 
+
+
+
+
+
+ 
+PAGE 2   DATE 12-22-2021  TIME  7:46:53  V001  TWA1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+*1ST FRANKLIN FINANCIAL     9-20    $2,190-O             REFINANC     CURR ACCT
+ 1531720 FP H+O  15   1  5-28-21                  5-21       ( 9) BCCCC--CC
+ 466900024653               4-21                      
+ ** ACCOUNT CLOSED DUE TO REFINANCE **
+ 
+*1ST FRANKLIN FINANCIAL     3-20    $1,920-O             REFINANC     CURR ACCT
+ 1531720 FP HHG  15   1  9-28-20                  9-20       ( 6) BCCCCC
+ 2105280437238330                                     
+ ** ACCOUNT CLOSED DUE TO REFINANCE **
+ 
+*1ST FRANKLIN FINANCIAL    10-19    $1,920-O             REFINANC     CURR ACCT
+ 1531720 FP HHG  15   1  4-11-20                  4-20       ( 6) BCCCCC
+ 2112120337238330                                     
+ ** ACCOUNT CLOSED DUE TO REFINANCE **
+ 
+*1ST FRANKLIN FINANCIAL    10-18    $1,920-O             REFINANC     CURR ACCT
+ 1531720 FP HHG  15   1 10-28-19                 10-19       (13) BCCCCCCCCCC-C
+ 2112170237238330                                     
+ ** ACCOUNT CLOSED DUE TO REFINANCE **
+ 
+*1ST FRANKLIN FINANCIAL     3-18    $1,830-O             REFINANC     CURR ACCT
+ 1531720 FP H+O  15   1 10-28-18                 10-18       ( 8) B-CCCCCC
+ 2105170237238330                                     
+ ** ACCOUNT CLOSED DUE TO REFINANCE **
+ 
+*1ST FRANKLIN FINANCIAL     6-17    $1,830-O             REFINANC     CURR ACCT
+ 1531720 FP H+O  15   1  3-28-18                  3-18       (10) BCCCCCCCCC
+ 2108100137238330                                     
+ ** ACCOUNT CLOSED DUE TO REFINANCE **
+ 
+*PRIMUS FINANCIAL SVCS      1-17   $11,083-O                 PAID    30 2 TIMES
+ 1680874 FA AUT  62   1  6-05-20                  6-20       (42) 11CCCCCCCCCCC
+ 26643461                                                          CCCCCCCCCCCC
+ 
+*CHILD SUPPORT ENF/LA       3-10       UNK                   OPEN    30 DAY DEL
+ 3995345 VK F/S   1   1 10-02-21      $639       10-21       ( 1) 1
+ 28838856                   9-21      $339        $639
+   
+ 
+ 1ST FRANKLIN FINANCIAL     5-21    $2,190-O                 OPEN     CURR ACCT
+ 1531720 FP H+O  15   1  9-28-21    $1,752        9-21       ( 5) CCCCC
+ 466900124159               9-21      $146            
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    WHELAN,JAMES R 666714588;CA-2428 10TH AVE W/SEATTLE WA 
+ 
+
+
+
+
+
+ 
+PAGE 3   DATE 12-22-2021  TIME  7:46:53  V001  TWA1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ BK OF AMER                 4-19   $60,300-O                 OPEN     CURR ACCT
+ 3991532 BM R/C 30Y   1  8-28-21   $59,143        8-21       (26) CCCCCCCCCCCCC
+ 28017661                             $563                         CCCCCCCCCCCC
+ 
+ AUTO FINANCING COMPANI     4-21   $16,663-O                 OPEN     CURR ACCT
+ 1615580 FA AUT  72   2  6-28-21   $16,314        6-21       ( 3) CCC
+ 23248356                   5-21      $379            
+ 
+ CHEVRON CREDIT BANK NA     6-20      $300-L      $274-H     OPEN     CURR ACCT
+ 3437520 OC CRC REV   4  6-28-21      $201        6-21       (12) CCCCCCCCCCCC
+ 1305817445                 6-21       UNK            
+ 
+ WEBBANK/DFS               12-19    $1,500-L    $1,169-H     OPEN     CURR ACCT
+ 1616760 FF CHG REV   1  5-28-21    $1,079        5-21       (18) CCCCCCCCCCCCC
+ 79450119017009362          5-21       $33                         CCCCC
+ 
+ --------------------------------- INQUIRIES ----------------------------------
+ NOWCOM/B &amp; B AUTO GROU  4-07-21  1198770 AU                
+ COLUMBIA CHEVROLET      4-02-21  2960701 AN                
+ CREDIT BUREAU BATON RO  7-03-20  2971020 FR        UNK R/C 
+ COLUMBIA CHEVROLET      4-22-20  2960701 AN                
+ HYUNDAI CAPITAL AMERIC  2-10-20  2612005 FA                
+ J P THIBODEAUX INC      2-09-20  9965408 AN                
+ WEBBANK/DFS            12-26-19  3135860 BB                
+ COURTESY IMPORTS       10-18-19  6964973 AU            AUT 
+ CAPITAL ONE AUTO FINAN 10-12-19  3587449 FP                
+ 
+ --------------------------------- MESSAGES -----------------------------------
+  MSG 335: FE08TOO MANY INQUIRIES LAST 12 MONTHS
+ 
+ END -- EXPERIAN
+ 
+
+
+
+
+
+
+
+
+]]&gt;&lt;/printImage&gt;
+          &lt;/response&gt;
+        &lt;/dataSource&gt;
+      &lt;/dataSourceList&gt;
+      &lt;first_name&gt;James&lt;/first_name&gt;
+      &lt;middle_initial&gt;R&lt;/middle_initial&gt;
+      &lt;last_name&gt;Whelan&lt;/last_name&gt;
+      &lt;name_suffix/&gt;
+      &lt;SSN&gt;666714588&lt;/SSN&gt;
+      &lt;current_address&gt;
+        &lt;address&gt;2428 10th Ave W&lt;/address&gt;
+        &lt;city&gt;Seattle&lt;/city&gt;
+        &lt;state&gt;WA&lt;/state&gt;
+        &lt;zip&gt;98119&lt;/zip&gt;
+      &lt;/current_address&gt;
+      &lt;decisionData&gt;
+        &lt;dataSourceAnalysisList&gt;
+          &lt;dataSourceAnalysis code="XPN"&gt;
+            &lt;indicators&gt;
+              &lt;abnormalReportIndicator&gt;S&lt;/abnormalReportIndicator&gt;
+              &lt;addressMismatchIndicator&gt;N&lt;/addressMismatchIndicator&gt;
+              &lt;aliasIndicator&gt;N&lt;/aliasIndicator&gt;
+              &lt;bankruptcyOnFileIndicator&gt;N&lt;/bankruptcyOnFileIndicator&gt;
+              &lt;consumerStatementIndicator&gt;N&lt;/consumerStatementIndicator&gt;
+              &lt;contactSubscriberIndicator&gt;N&lt;/contactSubscriberIndicator&gt;
+              &lt;creditCounselingIndicator&gt;N&lt;/creditCounselingIndicator&gt;
+              &lt;disputedAccountIndicator&gt;N&lt;/disputedAccountIndicator&gt;
+              &lt;fileVariationIndicator&gt;N&lt;/fileVariationIndicator&gt;
+              &lt;irregularReportDeceasedIndicator&gt;N&lt;/irregularReportDeceasedIndicator&gt;
+              &lt;irregularReportManualFileIndicator&gt;N&lt;/irregularReportManualFileIndicator&gt;
+              &lt;lostOrStolenCardIndicator&gt;N&lt;/lostOrStolenCardIndicator&gt;
+              &lt;nameMismatchIndicator&gt;N&lt;/nameMismatchIndicator&gt;
+              &lt;securityFrozenFileIndicator&gt;N&lt;/securityFrozenFileIndicator&gt;
+              &lt;securityOfacIndicator&gt;N&lt;/securityOfacIndicator&gt;
+              &lt;securityReportIndicator&gt;04&lt;/securityReportIndicator&gt;
+              &lt;ssnVariationIndicator&gt;N&lt;/ssnVariationIndicator&gt;
+              &lt;thinFileIndicator&gt;N&lt;/thinFileIndicator&gt;
+            &lt;/indicators&gt;
+            &lt;characteristics&gt;
+              &lt;avgMosInFile&gt;28&lt;/avgMosInFile&gt;
+              &lt;avgMosInFileTLRptd0To2Mos&gt;-99000792&lt;/avgMosInFileTLRptd0To2Mos&gt;
+              &lt;highestUtilOnBankNatlRevTL&gt;-99000792&lt;/highestUtilOnBankNatlRevTL&gt;
+              &lt;lowestRating&gt;901&lt;/lowestRating&gt;
+              &lt;lowestRatingIL&gt;901&lt;/lowestRatingIL&gt;
+              &lt;lowestRatingOpndLast12Mos&gt;002&lt;/lowestRatingOpndLast12Mos&gt;
+              &lt;lowestRatingOpndLast24Mos&gt;901&lt;/lowestRatingOpndLast24Mos&gt;
+              &lt;lowestRatingOpndLast36Mos&gt;901&lt;/lowestRatingOpndLast36Mos&gt;
+              &lt;lowestRatingRevOpen&gt;002&lt;/lowestRatingRevOpen&gt;
+              &lt;maxDelqEver&gt;2&lt;/maxDelqEver&gt;
+              &lt;maxDelqPR0To11Mos&gt;0&lt;/maxDelqPR0To11Mos&gt;
+              &lt;mosSncMostRcnt30pDelq&gt;5&lt;/mosSncMostRcnt30pDelq&gt;
+              &lt;mosSncMostRcnt60pDelq&gt;5&lt;/mosSncMostRcnt60pDelq&gt;
+              &lt;mosSncMostRcntDtOpnd&gt;7&lt;/mosSncMostRcntDtOpnd&gt;
+              &lt;mosSncMostRcntFinTLOpnd&gt;7&lt;/mosSncMostRcntFinTLOpnd&gt;
+              &lt;mosSncMostRcntInq&gt;8&lt;/mosSncMostRcntInq&gt;
+              &lt;mosSncOldestBankNatlRevOpenTLOpnd&gt;-99000792&lt;/mosSncOldestBankNatlRevOpenTLOpnd&gt;
+              &lt;mosSncOldestDtOpnd&gt;59&lt;/mosSncOldestDtOpnd&gt;
+              &lt;netFrctIL&gt;76&lt;/netFrctIL&gt;
+              &lt;netFrctMtg&gt;98&lt;/netFrctMtg&gt;
+              &lt;netFrctRev&gt;71&lt;/netFrctRev&gt;
+              &lt;numBankNatlRevTL90PctRptd0To2Mos&gt;-99000792&lt;/numBankNatlRevTL90PctRptd0To2Mos&gt;
+              &lt;numBankNatlRevTLWBal75PctAmt&gt;-99000792&lt;/numBankNatlRevTLWBal75PctAmt&gt;
+              &lt;numCollection&gt;0&lt;/numCollection&gt;
+              &lt;numDaysInq0to11MosExclLast30Days&gt;2&lt;/numDaysInq0to11MosExclLast30Days&gt;
+              &lt;numFinTL&gt;7&lt;/numFinTL&gt;
+              &lt;numInq0to11MosExclLast30Days&gt;2&lt;/numInq0to11MosExclLast30Days&gt;
+              &lt;numInq0to5MosExclLast14Days&gt;0&lt;/numInq0to5MosExclLast14Days&gt;
+              &lt;numInq0to5MosExclLast7Days&gt;0&lt;/numInq0to5MosExclLast7Days&gt;
+              &lt;numPR&gt;0&lt;/numPR&gt;
+              &lt;numRevOpenTLWBal&gt;2&lt;/numRevOpenTLWBal&gt;
+              &lt;numRevTL30pDaysEver&gt;0&lt;/numRevTL30pDaysEver&gt;
+              &lt;numRevTLWBal50PctAmt&gt;2&lt;/numRevTLWBal50PctAmt&gt;
+              &lt;numTL&gt;13&lt;/numTL&gt;
+              &lt;numTL30pDaysEverDerogPR&gt;2&lt;/numTL30pDaysEverDerogPR&gt;
+              &lt;numTL60pDaysEverDerogPR&gt;1&lt;/numTL60pDaysEverDerogPR&gt;
+              &lt;numTL90pDaysEverDerogPR&gt;1&lt;/numTL90pDaysEverDerogPR&gt;
+              &lt;numTLOpnd3MosAndNotGT2x30Days&gt;12&lt;/numTLOpnd3MosAndNotGT2x30Days&gt;
+              &lt;pctTLNeverDelq&gt;85&lt;/pctTLNeverDelq&gt;
+              &lt;pctTLNowCurr&gt;83&lt;/pctTLNowCurr&gt;
+              &lt;totBal&gt;89303&lt;/totBal&gt;
+              &lt;totRevBal&gt;1280&lt;/totRevBal&gt;
+            &lt;/characteristics&gt;
+            &lt;score1 Code="FE" InquiryIndicator="I" Score="553"&gt;
+              &lt;ReasonCode&gt;39&lt;/ReasonCode&gt;
+              &lt;ReasonCode&gt;13&lt;/ReasonCode&gt;
+              &lt;ReasonCode&gt;14&lt;/ReasonCode&gt;
+              &lt;ReasonCode&gt;18&lt;/ReasonCode&gt;
+            &lt;/score1&gt;
+            &lt;score2 Code="G" Score="281"/&gt;
+          &lt;/dataSourceAnalysis&gt;
+        &lt;/dataSourceAnalysisList&gt;
+        &lt;scoringList&gt;
+          &lt;scoring type="SBSS70"&gt;
+            &lt;model&gt;711&lt;/model&gt;
+            &lt;totalScore&gt;139.0&lt;/totalScore&gt;
+            &lt;modelReasonList&gt;
+              &lt;modelReason&gt;CG&lt;/modelReason&gt;
+              &lt;modelReason&gt;CP&lt;/modelReason&gt;
+              &lt;modelReason&gt;CE&lt;/modelReason&gt;
+              &lt;modelReason&gt;UE&lt;/modelReason&gt;
+            &lt;/modelReasonList&gt;
+            &lt;scoreReasonList&gt;
+              &lt;scoreReason&gt;
+                &lt;reasonCode&gt;39&lt;/reasonCode&gt;
+                &lt;dataSourceCode&gt;XPN&lt;/dataSourceCode&gt;
+                &lt;scoringModel&gt;FE&lt;/scoringModel&gt;
+              &lt;/scoreReason&gt;
+              &lt;scoreReason&gt;
+                &lt;reasonCode&gt;13&lt;/reasonCode&gt;
+                &lt;dataSourceCode&gt;XPN&lt;/dataSourceCode&gt;
+                &lt;scoringModel&gt;FE&lt;/scoringModel&gt;
+              &lt;/scoreReason&gt;
+              &lt;scoreReason&gt;
+                &lt;reasonCode&gt;CP&lt;/reasonCode&gt;
+                &lt;scoringModel&gt;711&lt;/scoringModel&gt;
+              &lt;/scoreReason&gt;
+              &lt;scoreReason&gt;
+                &lt;reasonCode&gt;CE&lt;/reasonCode&gt;
+                &lt;scoringModel&gt;711&lt;/scoringModel&gt;
+              &lt;/scoreReason&gt;
+            &lt;/scoreReasonList&gt;
+          &lt;/scoring&gt;
+          &lt;scoring type="BK10"&gt;
+            &lt;model&gt;777&lt;/model&gt;
+            &lt;totalScore&gt;351.0&lt;/totalScore&gt;
+            &lt;modelReasonList&gt;
+              &lt;modelReason&gt;CP&lt;/modelReason&gt;
+              &lt;modelReason&gt;N1&lt;/modelReason&gt;
+              &lt;modelReason&gt;UK&lt;/modelReason&gt;
+              &lt;modelReason&gt;CE&lt;/modelReason&gt;
+            &lt;/modelReasonList&gt;
+          &lt;/scoring&gt;
+        &lt;/scoringList&gt;
+      &lt;/decisionData&gt;
+    &lt;/principal_info&gt;
+  &lt;/principal_list&gt;
+  &lt;business_info business_xref_id="57041" ol_cb_score_cutoff="300" scoring_model_suite_type="700"&gt;
+    &lt;business_legal_name&gt;James R Whelan&lt;/business_legal_name&gt;
+    &lt;business_address&gt;2428 10th Ave W&lt;/business_address&gt;
+    &lt;business_city&gt;Seattle&lt;/business_city&gt;
+    &lt;business_state&gt;WA&lt;/business_state&gt;
+    &lt;business_zip&gt;98119&lt;/business_zip&gt;
+    &lt;decisionData&gt;
+      &lt;scoringList&gt;
+        &lt;scoring type="SBSS70"&gt;
+          &lt;model&gt;711&lt;/model&gt;
+          &lt;totalScore&gt;139.0&lt;/totalScore&gt;
+          &lt;modelReasonList&gt;
+            &lt;modelReason&gt;CG&lt;/modelReason&gt;
+            &lt;modelReason&gt;CP&lt;/modelReason&gt;
+            &lt;modelReason&gt;CE&lt;/modelReason&gt;
+            &lt;modelReason&gt;UE&lt;/modelReason&gt;
+          &lt;/modelReasonList&gt;
+          &lt;scoreReasonList&gt;
+            &lt;scoreReason&gt;
+              &lt;reasonCode&gt;39&lt;/reasonCode&gt;
+              &lt;dataSourceCode&gt;XPN&lt;/dataSourceCode&gt;
+              &lt;scoringModel&gt;FE&lt;/scoringModel&gt;
+            &lt;/scoreReason&gt;
+            &lt;scoreReason&gt;
+              &lt;reasonCode&gt;13&lt;/reasonCode&gt;
+              &lt;dataSourceCode&gt;XPN&lt;/dataSourceCode&gt;
+              &lt;scoringModel&gt;FE&lt;/scoringModel&gt;
+            &lt;/scoreReason&gt;
+            &lt;scoreReason&gt;
+              &lt;reasonCode&gt;CP&lt;/reasonCode&gt;
+              &lt;scoringModel&gt;711&lt;/scoringModel&gt;
+            &lt;/scoreReason&gt;
+            &lt;scoreReason&gt;
+              &lt;reasonCode&gt;CE&lt;/reasonCode&gt;
+              &lt;scoringModel&gt;711&lt;/scoringModel&gt;
+            &lt;/scoreReason&gt;
+          &lt;/scoreReasonList&gt;
+        &lt;/scoring&gt;
+        &lt;scoring type="BK10"&gt;
+          &lt;model&gt;777&lt;/model&gt;
+          &lt;totalScore&gt;351.0&lt;/totalScore&gt;
+          &lt;modelReasonList&gt;
+            &lt;modelReason&gt;CP&lt;/modelReason&gt;
+            &lt;modelReason&gt;N1&lt;/modelReason&gt;
+            &lt;modelReason&gt;UK&lt;/modelReason&gt;
+            &lt;modelReason&gt;CE&lt;/modelReason&gt;
+          &lt;/modelReasonList&gt;
+        &lt;/scoring&gt;
+      &lt;/scoringList&gt;
+    &lt;/decisionData&gt;
+  &lt;/business_info&gt;
+  &lt;response_message_list transaction_status_code="001" transaction_status_text="Successful - warnings"&gt;
+    &lt;message_info&gt;
+      &lt;message_code&gt;0x80042796&lt;/message_code&gt;
+      &lt;message_source&gt;PostProcessUtils:postProcessAPI2&lt;/message_source&gt;
+      &lt;message_text&gt;TID:{383abd78-bd41-4561-bac8-ac16341de6d2} - principal 1, XPN - Abnormal Bureau Report Warning&lt;/message_text&gt;
+    &lt;/message_info&gt;
+    &lt;message_info&gt;
+      &lt;message_code&gt;0x80042845&lt;/message_code&gt;
+      &lt;message_source&gt;PostProcessUtils:postProcessAPI2&lt;/message_source&gt;
+      &lt;message_text&gt;TID:{383abd78-bd41-4561-bac8-ac16341de6d2} - principal 1, XPN - Security Report Warning&lt;/message_text&gt;
+    &lt;/message_info&gt;
+  &lt;/response_message_list&gt;
+&lt;/FI_LiquidCredit&gt;
+</ns2:ObtainDecisionDataResult></ns2:ObtainDecisionDataResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>PortalValidationUtilAppCreationTest</testClassName>
+    <testClassName>PortalValidationUtilTest</testClassName>
+    <testClassName>PortalValidationUtilValidAppCreationTest</testClassName>
+    <testClassName>PortalValidationUtilValidApplicantTest</testClassName>
+    <testClassName>PortalValidationUtilValidateAppTest</testClassName>
+    <testClassName>PortalValidationUtilValidateCoAppTest</testClassName>
+    <testClassName>PortalValidationUtilValidateFlexRateTest</testClassName>
+    <testClassName>PortalValidationUtilValidateGrowerTest</testClassName>
+    <testClassName>PortalValidationUtilValidateProgramTest</testClassName>
+    <testClassName>PortalValidationUtilValidCoApplicantTest</testClassName>
+    <testClassName>PortalValidationUtilValidCoAppTest</testClassName>
+    <testClassName>PortalValidationUtilValidPrincipalTest</testClassName>
+</ApexTestSuite>

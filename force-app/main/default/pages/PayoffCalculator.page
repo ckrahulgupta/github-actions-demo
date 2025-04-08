@@ -1,0 +1,78 @@
+<!--
+  @description       : VF page for Payoff Calculator
+  @author            :  Pritam Roy
+  @group             : 
+  @last modified on  : 06-28-2024
+  @last modified by  : Tuhin Bhunia
+-->
+<apex:page controller="PayoffCalculatorController" renderAs="pdf" >
+  <head>
+    <style>
+      table, th, td,tr {
+            border-width: .5px;
+            border-color: black;
+            font-size: 14px;
+      }
+      td,th{
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <div style="font-family:sans-serif; background-size:cover">
+    <apex:variable var="coopType" value="{!coopType}" />
+    <apex:variable var="isSubTranche" value="{!isSubTranche}" />
+    <apex:variable var="estimatedPayoffLabel" value="{!IF(isSubTranche == true, 'Sub-Tranche Estimated Payoff', 'Total Estimated Payoff')}" />
+    <apex:image url="{!IF(coopType == 'Growmark', URLFOR($Resource.agriFinancePortalLogo), IF(coopType == 'Landus', URLFOR($Resource.landus_dealerPortalLogo), URLFOR($Resource.cfaLogo)))}" width="150" />
+    <br></br>
+    <br></br>
+    <br></br>
+    <h4>Grower Name:&nbsp;<apex:outputText value="{!growerName}" /></h4>
+    <h4>Estimated Payoff for&nbsp;<apex:outputText value="{!loanNumber}" /></h4>
+    <h5 style="margin-bottom: 0px;">Maturity Date:&nbsp;<apex:outputText value="{!maturityDate}" /></h5>
+    <h5 style="margin-top: 8px;">Crop Year:&nbsp;<apex:outputText value="{!cropYear}" /></h5>
+    <p>Estimated payoff is based on current balances and will be affected by any applicable interest rate changes, billings, advances against the loan, other charges, or loan payments.</p>
+    <table style="width:100%" border="1" cellpadding="8px" cellspacing="0px">
+      <tr style="font-family:sans-serif;text-align:center">
+        <th width="15%"></th>
+        <th><b>Current Balances As Of&nbsp;<apex:outputText value="{!todaysDate}" /></b></th>
+        <th><b>Accrued Days / Calendar Days</b></th>
+        <th><b>Accrual Daily Factor</b></th>
+        <th><b>Estimated Balances As Of&nbsp;<apex:outputText value="{!estimatedDate}" /></b></th>
+      </tr>
+      <tr>
+        <td style="text-align: left" width="15%"><b>Principal</b></td>
+        <td style="text-align:center"><apex:outputText value="{!currentBalance}" /></td>
+        <td></td>
+        <td></td>
+        <td style="text-align:center"><apex:outputText value="{!estimatedBalance}" /></td>
+      </tr>
+      <tr >
+        <td style="text-align: left" width="15%"><b>Interest</b></td>
+        <td style="text-align:center"> <apex:outputText value="{!currentInterest}" /></td>
+        <td style="text-align:center"><apex:outputText value="{!accruedDays}" /></td>
+        <td style="text-align:center"><apex:outputText value="{!accrualDailyFactor}" /></td>
+        <td style="text-align:center"><apex:outputText value="{!estimatedInterest}" /></td>
+      </tr>
+      <tr style="font-family:sans-serif;text-align:center">
+        <td style="text-align: left" width="15%"><b>Other Charges</b></td>
+        <td><apex:outputText value="{!currentCharges}" /></td>
+        <td></td>
+        <td></td>
+        <td><apex:outputText value="{!estimatedCharges}" /></td>
+      </tr>
+      <tr style="font-family:sans-serif;display:flex;justify-content: space-between;font-size:18px">
+        <td colspan="4"><b><apex:outputText value="{!estimatedPayoffLabel}"/></b></td>
+        <td style="text-align:center"><b><apex:outputText value="{!estimatedTotalBalance}"/></b></td>
+      </tr>
+    </table>
+    <apex:outputPanel rendered="{!isSubTranche==True}">
+        <h5 style="margin-bottom: 0px; margin-top: 25px;"><i>Current Sub-Tranche Balance:&nbsp;<apex:outputText value="{!currentTotalBalance}" /></i></h5>
+        <h5 style="margin-top: 8px; margin-bottom: 0px"><i>Estimated Sub-Tranche Balance:&nbsp;<apex:outputText value="{!estimatedTotalBalance}" /></i></h5>  
+        <h5 style="margin-top: 8px"><i>This is Sub-Tranche payoff only. Please request Total Loan Payoff to payoff loan in full.</i></h5>  
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!isSubTranche==False}">
+        <h5 style="margin-bottom: 0px;"><i>Current Total Loan Balance:&nbsp;<apex:outputText value="{!currentTotalBalance}" /></i></h5>
+        <h5 style="margin-top: 8px;"><i>Estimated Total Loan Balance:&nbsp;<apex:outputText value="{!estimatedTotalBalance}" /></i></h5>      
+    </apex:outputPanel>    
+  </div> 
+</apex:page>

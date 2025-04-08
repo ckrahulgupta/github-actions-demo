@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>NLSXMLImportForACHScheduleTest</testClassName>
+    <testClassName>NLSXMLImportForDraftScheduleTest</testClassName>
+    <testClassName>NLSXMLImportForPaymentScheduleTest</testClassName>
+    <testClassName>TestNLSBookToCoreCIFCalloutClass</testClassName>
+    <testClassName>TestNLSXMLImport</testClassName>
+    <testClassName>TestNLSXMLImportMobileDepositSchedule</testClassName>
+</ApexTestSuite>

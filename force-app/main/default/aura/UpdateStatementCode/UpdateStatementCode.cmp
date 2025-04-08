@@ -1,0 +1,64 @@
+<!--
+  @description       : 
+  @author            : Rahul Gupta
+  @group             : 
+  @last modified on  : 09-14-2023
+  @last modified by  : Rahul Gupta
+-->
+<aura:component controller="StatementCodeController" 
+                implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" 
+                access='global'>
+
+    <aura:attribute name="statementCodeFrequencies" type="List" />
+    <aura:attribute name="showLoader" type="Boolean" default="false"/>
+
+    <aura:if isTrue="{!v.showLoader}">
+        <div class="loader">
+            <lightning:spinner alternativeText="Loading" size="medium" />
+        </div>
+    </aura:if>
+    
+    <div class="slds-p-horizontal_medium slds-p-top_small slds-p-bottom_none slds-align_absolute-center">
+        <h3 id="header43" class="slds-text-heading--small"><strong>Update Loan Statement Code</strong></h3>
+    </div>
+
+    <div class="slds-p-horizontal_medium slds-p-vertical_small">
+        <lightning:input type="date" 
+                         name="MaturityDate" 
+                         aura:id="MaturityDate" 
+                         label="Maturity Date" 
+                         dateStyle="short"
+                         required="true" 
+                         messageWhenValueMissing="Please enter a maturity date." 
+                         messageWhenBadInput="Please enter a valid maturity date." />
+    </div>
+    <aura:if isTrue="{!not(empty(v.statementCodeFrequencies))}">
+        <div class="slds-p-horizontal_medium slds-p-bottom_small slds-p-top_none">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="slds-p-bottom_xx-small">Statement Code</th>
+                        <th class="slds-p-bottom_xx-small">Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.statementCodeFrequencies}" var="statementCodeFrequency" indexVar="statementCode">
+                        <tr>
+                            <td>{!statementCodeFrequency.statementCode}</td>
+                            <td>{!statementCodeFrequency.frequency}</td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+ 
+        </div>
+    </aura:if>
+    
+    <div class="slds-p-horizontal_medium slds-p-vertical_small slds-align_absolute-center btn-wrapper">
+        <lightning:button class="slds-button slds-button_brand" onclick="{!c.downloadLoansCsv}">Download Report</lightning:button>
+    </div>
+    <div class="slds-p-horizontal_medium slds-p-vertical_small slds-align_absolute-center btn-wrapper">
+        <lightning:button class="slds-button slds-button_outline-brand" onclick="{!c.showCount}">Show Count</lightning:button>
+        <lightning:button class="slds-button slds-button_brand" onclick="{!c.updateStatementCode}">Update</lightning:button>
+    </div>
+</aura:component>

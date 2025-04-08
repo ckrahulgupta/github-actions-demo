@@ -1,0 +1,17 @@
+<apex:page showHeader="false" applyBodyTag="false">
+    <apex:includeLightning />
+
+    <div id="reportContainer"></div>
+
+    <script>
+        $Lightning.use('c:dealerPortalReports', () => {
+            $Lightning.createComponent('c:powerBiReport', {
+
+                reportName: '{!$CurrentPage.parameters.reportName}'
+
+            }, 'reportContainer', (component) => {
+                console.log('loaded')
+            });
+        });
+    </script>
+</apex:page>

@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : Krishanu Chinya
+  @group             : 
+  @last modified on  : 06-27-2024
+  @last modified by  : Ayan Bhowmik
+-->
+<template>
+    <div class="mainContainer">
+        <p>
+            <span class="mainHeader">Please select the type of Account you want to create</span>
+        </p>
+        </br>
+        <lightning-radio-group name="radioGroup"
+                                label="Record Type"
+                                options={recordTypeList}
+                                value={value}
+                                type="radio"
+                                required="true"
+                                onchange={handleChange}>
+        </lightning-radio-group>
+    </div>
+</template>

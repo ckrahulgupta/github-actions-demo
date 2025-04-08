@@ -1,0 +1,53 @@
+<!--
+  @description       : HTML Class for ModifyDealerRelation LWC
+  @author            : Simran
+  @group             : 
+  @last modified on  : 02-22-2024
+  @last modified by  : Simran
+-->
+<template>
+   <div class="mainContainer" >
+       <template if:true={states.start} >
+            <lightning-card title="Please choose an option to modify the dealer relation" >
+                <fieldset class="slds-form-element">
+                    <div class="radio-box">
+                    <div class="slds-form-element__control radio-container">
+                      <span class="slds-radio">
+                        <input type="radio" id="radio-61" value="update" name="default"  onchange={handleOptionChange} />
+                        <label class="slds-radio__label" for="radio-61">
+                          <span class="slds-radio_faux"></span>
+                          <span class="slds-form-element__label">Update Dealer Relation</span>
+                        </label>
+                      </span>
+                      <span class="slds-radio">
+                        <input type="radio" id="radio-62" value="remove" name="default" onchange={handleOptionChange} />
+                        <label class="slds-radio__label" for="radio-62">
+                          <span class="slds-radio_faux"></span>
+                          <span class="slds-form-element__label">Remove Dealer Relation</span>
+                        </label>
+                      </span>
+                    </div>
+                </div>
+                  </fieldset>
+
+            <p class="buttonContainer" align="right">
+                <lightning-button class ="continueBtn" label="Continue" onclick={handleContinue}></lightning-button>
+            </p>
+            </lightning-card>
+        </template>
+        <template if:true={states.update} >
+            <c-update-dealer-relation
+            dealer-contact-name={accountDetails.Name}
+            dealer-contact-id={accountDetails.Id}
+            dealer-contact-entity-role={accountDetails.RecordType.Name}
+            parent-id={accountDetails.ParentId}
+            parent-account-name={accountDetails.Parent.Name}
+            dealer-contact-entity-role-id={accountDetails.RecordTypeId}
+        ></c-update-dealer-relation>
+        </template>
+
+        <template if:true={states.remove} >
+            <c-remove-dealer-relation dealer-contactid={accountDetails.Id}></c-remove-dealer-relation>
+        </template>
+</div>
+</template>

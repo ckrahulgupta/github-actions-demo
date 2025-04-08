@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : Soumik Pattanayak
+  @group             : 
+  @last modified on  : 11-01-2025
+  @last modified by  : Soumik Pattanayak
+-->
+<template>
+    <div class="mainContainer">
+        <lightning-card class="checkBoxMainContainer" title="Select Grower Portal" icon-name="custom:custom14">
+            <lightning-checkbox-group class="checkBoxContents slds-text-heading_medium"
+                name="Please select the portal you want to enable for the grower"
+                label="Please select the portal you want to enable for the grower" 
+                options={mapData} 
+                value={value}
+                onchange={handleChange}></lightning-checkbox-group>
+            <p class="buttonContainer" align="right">
+                <lightning-button class="saveBtn" label="Enable" onclick={handleSave}></lightning-button>
+            </p>
+
+        </lightning-card>
+    </div>
+</template>

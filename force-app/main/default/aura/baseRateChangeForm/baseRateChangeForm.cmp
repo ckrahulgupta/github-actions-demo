@@ -1,0 +1,10 @@
+<!--
+  @description       :  Embed LWC in Aura Component
+  @author            :  Pritam Roy
+  @group             : 
+  @last modified on  : 04-15-2024
+  @last modified by  :  Pritam Roy
+-->
+<aura:component implements = "force:lightningQuickAction">
+    <c:baseRateChange/>
+</aura:component>

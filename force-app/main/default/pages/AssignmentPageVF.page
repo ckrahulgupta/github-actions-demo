@@ -1,0 +1,27 @@
+<apex:page showHeader="false" 
+           sidebar="false" 
+           standardStylesheets="false" 
+           applyHtmlTag="false" 
+           applyBodyTag="false" 
+           docType="html-5.0"
+           controller="clcommon.PortalActions"
+           extensions="PortalDealerPersonalizeControllerExt">
+
+    <apex:include pageName="clcommon__ResolveNamespace" />
+    <apex:variable var="coopType" value="{!CoopTypeFromURL}" />
+
+    <html>
+        <head>
+            <meta name="viewport" 
+                content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+           
+            
+        </head>
+        <body>
+            <!-- navigation structure name include -->
+            <clcommon:IncludePortal2 navName="test_rahul_assignment" theme="mui"></clcommon:IncludePortal2>
+        </body>
+
+        
+    </html>
+</apex:page>

@@ -1,0 +1,47 @@
+<!--
+  @description       :  Base Rate Change HTML
+  @author            :  Pritam Roy
+  @group             : 
+  @last modified on  : 06-10-2024
+-->
+<template>
+    <div class="customCard">
+        <div class="selectLabel">
+            <lightning-combobox
+                label="Select Index"
+                value="--None--"
+                options={options}
+                onchange={handleChange}
+                variant="label-inline"
+            ></lightning-combobox>
+        </div>
+        <template if:true={showDynamicField}>
+            <div class="indexRate">
+                <lightning-input
+                    type = "text"
+                    label= "Current Index Rate (%)"
+                    value = {dynamicFieldValue}
+                    variant= "label-inline"
+                    data-lightning-input="Current Index Rate (%)"
+                    disabled 
+                ></lightning-input>
+            </div>
+            <div class="indexRate">
+                <lightning-input
+                    type = "text"
+                    label="New Index Rate (%)"
+                    value= {newInterestValue}
+                    variant="label-inline"
+                    data-lightning-input="New Index Rate (%)"
+                ></lightning-input>
+                <div class="slds-error" if:true={newInterestRateError}>{newInterestRateError}</div>
+                </div>
+            <div id="saveMessage" class="slds-hidden"></div>
+            <div>
+                <p class="buttonContainer" align="right">
+                    <lightning-button class ="saveBtn" label="Save" onclick={handleSave} data-id="saveButton"></lightning-button>
+                </p>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,251 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"><SOAP:Header/><SOAP:Body><ns2:ObtainDecisionDataResponse xmlns:ns2="http://www.liquidCredit.com/"><ns2:ObtainDecisionDataResult><FI_LiquidCredit APIVersion="2" customer_id="TheCoopFinanceAssoc" offering_id="14" product_category_id="2200" submission_id="06af137c-0410-4683-b253-f4bbe883f437" submission_xref_id="20211118094147" timestamp="20230608 192437413 GMT" transaction_id="c7850958-dc9d-4c77-b5fa-bd42cd9c88c3">
+  <loan_amount>600000</loan_amount>
+  <loan_purpose>Crop</loan_purpose>
+  <principal_list>
+    <principal_info customer_xref_id="57041" principalReportId="RPTID01">
+      <dataSourceList/>
+      <first_name>RALPH</first_name>
+      <middle_initial>E</middle_initial>
+      <last_name>HOLZFASTER</last_name>
+      <name_suffix/>
+      <SSN>506502389</SSN>
+      <current_address>
+        <address>77045 ROAD 343</address>
+        <city>PAXTON</city>
+        <state>NE</state>
+        <zip>69155</zip>
+      </current_address>
+      <decisionData>
+        <dataSourceAnalysisList>
+          <dataSourceAnalysis code="XPN">
+            <indicators/>
+            <characteristics/>
+            <score1 Code="FE" Score="827">
+              <ReasonCode>32</ReasonCode>
+              <ReasonCode>06</ReasonCode>
+              <ReasonCode>14</ReasonCode>
+              <ReasonCode>05</ReasonCode>
+            </score1>
+          </dataSourceAnalysis>
+        </dataSourceAnalysisList>
+        <scoringList/>
+      </decisionData>
+    </principal_info>
+    <principal_info customer_xref_id="57041" principalReportId="RPTID02">
+      <dataSourceList>
+        <dataSource code="XPN" noDataFlag="N" reportObtainedDate="20230608 192438393 GMT" requestStatus="C">
+          <response>
+            <printImage><![CDATA[TBD2 AFM 2530350    HOLZFASTER,FRANCIS J 507886135;CA-77035 ROAD 343/PAXTON NE 
+69155;Y-03091963;RM-FE;RM-G;PARSED;VERIFY-DM/RM;RR-BOTH1;V-07/081;SSRV-ECNC;
+IPADDR-10.8.118.34;SSOUSERID-NETCONNECTPROD;
+Q-ECNC0202023060802243709CICSCSTGECNC0000000
+ 
+
+
+ 
+PAGE 1   DATE  6-08-2023  TIME 14:24:38  V601  TNE1
+ 
+*JON HOLZFASTER                   SS: 507-88-6135     E: HOLZFASTER FARM -PAXTO
+*PO BOX 190                       DOB: 03/09/63       RPTD: 4-99 TO 7-19 I
+ NORTH PLATTE NE 691030190
+ RPTD: 5-22 U 1X                                      E: OWNER
+ LAST SUB: 1270246                                    RPTD: 10-17 I
+ 
+ 77035 ROAD 343
+ PAXTON NE 691554000
+ RPTD: 7-05 TO 3-22 U 7X
+ 
+*5853 ROAD 177
+ OSHKOSH NE 691546061
+ RPTD: 4-18 U 2X
+ 
+*F JON HOLZFASTER, HOLZFASTER FRANCIS, > <<<<<
+*HOLZFASTER F JON, HOLZFASTER FAR,
+*FRANCIS J CHANDLER
+ 
+ ---------------------------- FRAUD SHIELD SUMMARY ----------------------------
+ INPUT SSN ISSUED 1972-1977                FILE: ENGINEERING-MANAGEMENT SERVICE
+ INQUIRY/ONFILE CURRENT ADDRESS CONFLICT         NEWTON KUJATH &amp; CADY
+ FROM  3-01-23 INQ COUNT FOR SSN=0               PO BOX 190
+ FROM  3-01-23 INQ COUNT FOR ADDRESS=0           NORTH PLATTE NE 69103
+                                                 308.534.3388
+ 
+ ------------------------------ PROFILE SUMMARY -------------------------------
+                                                                CNT 00/00/00/00
+ PUBLIC RECORDS-------0  PAST DUE AMT--------$0  INQUIRIES---4  SATIS ACCTS--16
+ INST/OTH BAL--------$0  SCH/EST PAY-------$698  INQS/6 MO---0  NOW DEL/DRG---0
+ R ESTATE BAL--------$0  R ESTATE PAY--------$0  TRADELINE--16  WAS DEL/DRG---0
+ TOT REV BAL----$35,573  TOT REV AVAIL------64%  PAID ACCT--10  OLD TRADE-11-98
+ 
+ ------------------------------- SCORE SUMMARY --------------------------------
+ FICO SCORE 9 AUTO                    =   747    SCORE FACTORS: 10, 32, 06, 11
+ 
+ ----------------------------------- TRADES -----------------------------------
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+*CNH INDUSTRIAL CAPITAL     9-01   $36,000-L   $37,422-H   CLOSED     CURR ACCT
+ 1615620 FF CRC REV   0 10-24-14                 10-14       (99) BCCCCCCCCCCCC
+ 5043931138803386          10-14                                   CCCCCCCCCCCC
+ ** PURCHASED BY ANOTHER LENDER **
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    HOLZFASTER,FRANCIS J 507886135;CA-77035 ROAD 343/PAXTON NE 
+ 
+
+
+
+
+
+ 
+PAGE 2   DATE  6-08-2023  TIME 14:24:38  V601  TNE1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ WESTERN NEBRASKA BANK      1-20    $8,191-O                 PAID     CURR ACCT
+ 1976636 BB SEC  11-P 5 11-30-20                 11-20       (11) BCCCCCCCCCC
+ 10002064                  11-20
+ 
+ FARM CREDIT/AGDIRECT       2-20   $54,150-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  61-Y 1  4-24-20                  4-20       ( 3) BCC
+ 3230071
+ 
+ FARM CREDIT SVCS OF AM     1-05  $361,250-O                 PAID     CURR ACCT
+ 1509640 FZ R/C 15Y-Y 1  1-02-20                  1-20       (60) BCCCCCCCCCCCC
+ 1587571                                                           CCCCCCCCCCCC
+ 
+ WESTERN NEBRASKA BANK      3-19    $4,158-O                 PAID     CURR ACCT
+ 1976636 BB SEC   9-P 2 11-30-19                 11-19       ( 9) BCCCCCCCC
+ 10001675                  11-19
+ 
+*NEBRASKA FURNITURE MAR     4-99    $7,700-L    $5,805-H     PAID     CURR ACCT
+ 9302896 HF CHG REV   1 11-13-19                 11-19       (99) B000000000000
+ 794154                    12-99                                   000000000000
+ ** ACCOUNT CLOSED AT CREDIT GRANTOR'S REQUEST **
+ 
+ ALLY FINANCIAL             9-15   $32,810-O                 PAID     CURR ACCT
+ 1918788 FA AUT  60   1  7-17-19                  7-19       (47) BCCCCCCCCCCCC
+ 673923258397               7-19                                   CCCCCCCCCCCC
+ 
+ WESTERN NEBRASKA BANK      3-18    $3,158-O                 PAID     CURR ACCT
+ 1976636 BB SEC   7-P 2 11-30-18                 11-18       ( 9) BCCCCCCCC
+ 10001277                  11-18
+ 
+ CNH INDUSTRIAL CAPITAL     8-12  $320,660-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 1 10-02-17                 10-17       (62) BCCCCCCCCCCCC
+ 35307336961295001          9-17                                   CCCCCCCCCCCC
+ 
+ US BANK                    4-12   $15,036-O                 PAID     CURR ACCT
+ 1183670 BB AUT  25-Y 1  4-30-15                  4-15       (37) BCCCCCCCCCCCC
+ 9669355                    4-15                                   CCCCCCCCCCCC
+ 
+ CAPITAL ONE                2-22   $25,000-L   $16,862-H     OPEN     CURR ACCT
+ 1270246 BC BCC REV   1  6-02-23   $16,862        6-23       (16) CCCCCCCCCCCCC
+ 555675967091               5-23      $168                         CCC
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    HOLZFASTER,FRANCIS J 507886135;CA-77035 ROAD 343/PAXTON NE 
+ 
+
+
+
+
+
+ 
+PAGE 3   DATE  6-08-2023  TIME 14:24:38  V601  TNE1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ CAPITAL ONE                2-19    $5,000-L    $1,524-H     OPEN     CURR ACCT
+ 2218590 BC CRC REV   1  5-25-23        $2        5-23       (52) CCCCCCCCCCCCC
+ 5156788923870985           5-23        $2                         CCCCCCCCCCCC
+ 
+ CAPITAL ONE                5-01   $25,000-L   $23,295-H     OPEN     CURR ACCT
+ 2218590 BC CRC REV   1  5-23-23   $18,494        5-23       (99) CCCCCCCCCCCCC
+ 5463256246448374           4-23      $472                         CCCCCCCCCCCC
+ 
+ CAPITAL ONE                2-13   $15,000-L   $13,705-H     OPEN     CURR ACCT
+ 2218590 BC CRC REV   1  5-23-23        $0        5-23       (99) 00CCCCCCCCCCC
+ 5463256492520025           4-23                                   0CCCC0CCCCCC
+ 
+ SHELL/CBNA                 2-03   $10,000-L    $3,209-H     OPEN     CURR ACCT
+ 1811026 BC CRC REV   3  5-22-23       $70        5-23       (99) CCC00CC0CCCCC
+ 5187520091219627           4-23       $29                         C0CC00000CCC
+ 
+ CAPITAL ONE               11-98   $19,500-L   $18,831-H     OPEN     CURR ACCT
+ 2218590 BC CRC REV   3  5-13-23      $145        5-23       (99) CCC0CC0CC0CCC
+ 5463258324841520           5-23       $27                         0CCCCCCCCCCC
+ 
+ --------------------------------- INQUIRIES ----------------------------------
+ THE COOPERATIVE FINANC  4-12-22  2530350 FZ                
+ CAP1/CLUB               2-04-22  2397698 BC                
+ FIRST NATIONAL BANK OM  9-20-21  2917865 BB                
+ FACTUAL DATA            6-30-21  1975465 ZF        UNK BUS 
+ 
+ --------------------------------- MESSAGES -----------------------------------
+  MSG 175: MODEL G BLOCKED
+ 
+ END -- EXPERIAN
+ 
+
+
+
+
+
+
+
+
+]]></printImage>
+          </response>
+        </dataSource>
+      </dataSourceList>
+      <first_name>FRANCIS</first_name>
+      <middle_initial>J</middle_initial>
+      <last_name>HOLZFASTER</last_name>
+      <name_suffix/>
+      <SSN>507886136</SSN>
+      <current_address>
+        <address>77035 ROAD 343</address>
+        <city>PAXTON</city>
+        <state>NE</state>
+        <zip>69155</zip>
+      </current_address>
+      <decisionData/>
+    </principal_info>
+  </principal_list>
+  <business_info business_xref_id="57041" ol_cb_score_cutoff="300" scoring_model_suite_type="700">
+    <business_legal_name>HOLZFASTER FARM JV</business_legal_name>
+    <business_address>P O BOX 243</business_address>
+    <business_city>PAXTON</business_city>
+    <business_state>NE</business_state>
+    <business_zip>69155</business_zip>
+    <decisionData>
+      <scoringList/>
+    </decisionData>
+  </business_info>
+  <response_message_list/>
+</FI_LiquidCredit>
+</ns2:ObtainDecisionDataResult></ns2:ObtainDecisionDataResponse></SOAP:Body></SOAP:Envelope>

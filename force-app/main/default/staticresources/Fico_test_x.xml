@@ -1,0 +1,662 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"><SOAP:Header/><SOAP:Body><ns2:ObtainDecisionDataResponse xmlns:ns2="http://www.liquidCredit.com/"><ns2:ObtainDecisionDataResult><FI_LiquidCredit APIVersion="2" customer_id="TheCoopFinanceAssoc" offering_id="14" product_category_id="2200" submission_id="9666c726-8d54-44d4-90d4-5fadcb344886" submission_xref_id="20211118094147" timestamp="20240212 201931127 GMT" transaction_id="13759a59-0273-4473-9df7-8af054261fd7">
+  <loan_amount>2650000</loan_amount>
+  <loan_purpose>Crop</loan_purpose>
+  <principal_list>
+    <principal_info customer_xref_id="57041" principalReportId="RPTID01">
+      <dataSourceList>
+        <dataSource code="XPN" noDataFlag="N" reportObtainedDate="20240212 201932587 GMT" requestStatus="C">
+          <response>
+            <printImage/>
+          </response>
+        </dataSource>
+      </dataSourceList>
+      <first_name>JEFFREY</first_name>
+      <middle_initial>E</middle_initial>
+      <last_name>RILEY</last_name>
+      <name_suffix/>
+      <SSN>399487910</SSN>
+      <current_address>
+        <address>10474 COUNTY ROAD M</address>
+        <city>DARLINGTON</city>
+        <state>WI</state>
+        <zip>53530</zip>
+      </current_address>
+      <decisionData>
+        <dataSourceAnalysisList>
+          <dataSourceAnalysis code="XPN">
+            <indicators>
+              <abnormalReportIndicator>N</abnormalReportIndicator>
+              <addressMismatchIndicator>N</addressMismatchIndicator>
+              <aliasIndicator>N</aliasIndicator>
+              <bankruptcyOnFileIndicator>N</bankruptcyOnFileIndicator>
+              <consumerStatementIndicator>N</consumerStatementIndicator>
+              <contactSubscriberIndicator>N</contactSubscriberIndicator>
+              <creditCounselingIndicator>N</creditCounselingIndicator>
+              <disputedAccountIndicator>N</disputedAccountIndicator>
+              <fileVariationIndicator>N</fileVariationIndicator>
+              <irregularReportDeceasedIndicator>N</irregularReportDeceasedIndicator>
+              <irregularReportManualFileIndicator>N</irregularReportManualFileIndicator>
+              <lostOrStolenCardIndicator>N</lostOrStolenCardIndicator>
+              <nameMismatchIndicator>N</nameMismatchIndicator>
+              <securityFrozenFileIndicator>N</securityFrozenFileIndicator>
+              <securityOfacIndicator>N</securityOfacIndicator>
+              <securityReportIndicator>00</securityReportIndicator>
+              <ssnVariationIndicator>N</ssnVariationIndicator>
+              <thinFileIndicator>N</thinFileIndicator>
+            </indicators>
+            <characteristics>
+              <avgMosInFile>85</avgMosInFile>
+              <avgMosInFileTLRptd0To2Mos>42</avgMosInFileTLRptd0To2Mos>
+              <highestUtilOnBankNatlRevTL>47</highestUtilOnBankNatlRevTL>
+              <lowestRating>030</lowestRating>
+              <lowestRatingIL>030</lowestRatingIL>
+              <lowestRatingOpndLast12Mos>003</lowestRatingOpndLast12Mos>
+              <lowestRatingOpndLast24Mos>007</lowestRatingOpndLast24Mos>
+              <lowestRatingOpndLast36Mos>015</lowestRatingOpndLast36Mos>
+              <lowestRatingRevOpen>009</lowestRatingRevOpen>
+              <maxDelqEver>8</maxDelqEver>
+              <maxDelqPR0To11Mos>7</maxDelqPR0To11Mos>
+              <mosSncMostRcnt30pDelq>-99000792</mosSncMostRcnt30pDelq>
+              <mosSncMostRcnt60pDelq>-99000792</mosSncMostRcnt60pDelq>
+              <mosSncMostRcntDtOpnd>6</mosSncMostRcntDtOpnd>
+              <mosSncMostRcntFinTLOpnd>11</mosSncMostRcntFinTLOpnd>
+              <mosSncMostRcntInq>-99000792</mosSncMostRcntInq>
+              <mosSncOldestBankNatlRevOpenTLOpnd>269</mosSncOldestBankNatlRevOpenTLOpnd>
+              <mosSncOldestDtOpnd>310</mosSncOldestDtOpnd>
+              <netFrctIL>74</netFrctIL>
+              <netFrctMtg>88</netFrctMtg>
+              <netFrctRev>47</netFrctRev>
+              <numBankNatlRevTL90PctRptd0To2Mos>0</numBankNatlRevTL90PctRptd0To2Mos>
+              <numBankNatlRevTLWBal75PctAmt>0</numBankNatlRevTLWBal75PctAmt>
+              <numCollection>0</numCollection>
+              <numDaysInq0to11MosExclLast30Days>0</numDaysInq0to11MosExclLast30Days>
+              <numFinTL>14</numFinTL>
+              <numInq0to11MosExclLast30Days>0</numInq0to11MosExclLast30Days>
+              <numInq0to5MosExclLast14Days>0</numInq0to5MosExclLast14Days>
+              <numInq0to5MosExclLast7Days>0</numInq0to5MosExclLast7Days>
+              <numPR>0</numPR>
+              <numRevOpenTLWBal>1</numRevOpenTLWBal>
+              <numRevTL30pDaysEver>0</numRevTL30pDaysEver>
+              <numRevTLWBal50PctAmt>0</numRevTLWBal50PctAmt>
+              <numTL>55</numTL>
+              <numTL30pDaysEverDerogPR>0</numTL30pDaysEverDerogPR>
+              <numTL60pDaysEverDerogPR>0</numTL60pDaysEverDerogPR>
+              <numTL90pDaysEverDerogPR>0</numTL90pDaysEverDerogPR>
+              <numTLOpnd3MosAndNotGT2x30Days>55</numTLOpnd3MosAndNotGT2x30Days>
+              <pctTLNeverDelq>100</pctTLNeverDelq>
+              <pctTLNowCurr>100</pctTLNowCurr>
+              <totBal>2099127</totBal>
+              <totRevBal>4654</totRevBal>
+            </characteristics>
+            <score1 Code="FE" Score="781">
+              <ReasonCode>10</ReasonCode>
+              <ReasonCode>06</ReasonCode>
+              <ReasonCode>33</ReasonCode>
+              <ReasonCode>14</ReasonCode>
+            </score1>
+          </dataSourceAnalysis>
+        </dataSourceAnalysisList>
+        <scoringList>
+          <scoring type="SBSS70">
+            <model>711</model>
+            <totalScore>216.0</totalScore>
+            <modelReasonList>
+              <modelReason>NH</modelReason>
+              <modelReason>ND</modelReason>
+              <modelReason>CE</modelReason>
+              <modelReason>CP</modelReason>
+            </modelReasonList>
+            <scoreReasonList>
+              <scoreReason>
+                <reasonCode>NH</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+              <scoreReason>
+                <reasonCode>ND</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+              <scoreReason>
+                <reasonCode>CE</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+              <scoreReason>
+                <reasonCode>CP</reasonCode>
+                <scoringModel>711</scoringModel>
+              </scoreReason>
+            </scoreReasonList>
+          </scoring>
+          <scoring type="BK10">
+            <model>777</model>
+            <totalScore>396.0</totalScore>
+            <modelReasonList>
+              <modelReason>UK</modelReason>
+              <modelReason>UI</modelReason>
+              <modelReason>CE</modelReason>
+              <modelReason>CP</modelReason>
+            </modelReasonList>
+          </scoring>
+        </scoringList>
+      </decisionData>
+    </principal_info>
+    <principal_info customer_xref_id="57041" principalReportId="RPTID02">
+      <dataSourceList>
+        <dataSource code="XPN" reportObtainedDate="20240212 201932587 GMT" requestStatus="E">
+          <response>
+            <printImage><![CDATA[TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+WI 53530;Y-11281962;RM-FE;RM-G;PARSED;VERIFY-DM/RM;RR-BOTH1;V-07/081;SSRV-ECNC;
+IPADDR-10.8.118.34;SSOUSERID-NETCONNECTPROD;
+Q-ECNC0202024021202193108CICSCSTGECNC0000000
+ 
+
+
+ 
+PAGE 1   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ JEFFREY E RILEY               SS: 399-48-7910     E: SELF- EMPLOYED
+ 10474 COUNTY ROAD M              DOB: 11/28/62       RPTD: 11-13 I
+ DARLINGTON WI 535309427
+ RPTD: 10-18 TO 7-23 U 32X
+ LAST SUB: 3620144  
+ 
+*9399 S DUBLIN RD
+ DARLINGTON WI 535309214
+ RPTD: 1-99 TO 7-18 U 11X
+ 
+*9141 R AND K RD
+ DARLINGTON WI 535309779
+ RPTD: 3-93 TO 7-04 U
+ 
+ ---------------------------- FRAUD SHIELD SUMMARY ----------------------------
+ INPUT SSN ISSUED 1962-1965
+ FROM 11-01-23 INQ COUNT FOR SSN=0
+ FROM 11-01-23 INQ COUNT FOR ADDRESS=0
+ 
+ ------------------------------ PROFILE SUMMARY -------------------------------
+                                                                CNT 00/00/00/00
+ PUBLIC RECORDS-------0  PAST DUE AMT--------$0  INQUIRIES---0  SATIS ACCTS--55
+ INST/OTH BAL--$1572310  SCH/EST PAY----$41,013  INQS/6 MO---0  NOW DEL/DRG---0
+ R ESTATE BAL--$522,163  R ESTATE PAY----$2,461  TRADELINE--55  WAS DEL/DRG---0
+ TOT REV BAL-----$4,654  TOT REV AVAIL------97%  PAID ACCT--36  OLD TRADE--4-98
+ 
+ ------------------------------- SCORE SUMMARY --------------------------------
+ FICO SCORE 9 AUTO                    =   781    SCORE FACTORS: 10, 06, 33, 14
+ 
+ ----------------------------------- TRADES -----------------------------------
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+*BANK OF AMERICA            8-13    $6,500-L      $901-H   CLOSED     CURR ACCT
+ 1230206 BC CRC REV   1  1-12-17        $0        1-17       (41) B000000000000
+ 1180                       9-13                                   000000000000
+ ** ACCOUNT CLOSED AT CONSUMER'S REQUEST **
+ 
+*CNH INDUSTRIAL CAPITAL     4-98   $30,240-L   $21,374-H   CLOSED     CURR ACCT
+ 1615620 FF CRC REV   2 10-24-14                 10-14       (99) B0000CCCCCCCC
+ 5043931102103391           5-14                                   CCCCCCCCCCCC
+ ** PURCHASED BY ANOTHER LENDER **
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+ 
+
+
+
+
+
+ 
+PAGE 2   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ FARM CREDIT/AGDIRECT       6-20   $65,150-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  36-Y 1  6-26-23                  6-23       (37) BCCCCCCCCCCCC
+ 3259501                                                           CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     5-20   $28,350-O                 PAID     CURR ACCT
+ 3620144 FF CIL  36-Y 1  5-31-23                  5-23       (37) BCCCCCCCCCCCC
+ 137549                     5-23                                   CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       5-18   $37,600-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  61-Y 1  5-22-23                  5-23       (61) BCCCCCCCCCCCC
+ 3142323                                                           CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       3-18   $21,000-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  61-Y 1  3-20-23                  3-23       (61) BCCCCCCCCCCCC
+ 3132720                                                           CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     1-20   $35,872-O                 PAID     CURR ACCT
+ 3620144 FF CIL  36-Y 1  1-31-23                  1-23       (37) BCCCCCCCCCCCC
+ 30320                      1-23                                   CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     7-20   $22,350-O                 PAID     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-21                  1-21       ( 7) BCCCCCC
+ 137556                     1-21
+ 
+ CNH INDUSTRIAL CAPITAL    12-17  $268,250-O                 PAID     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-21                  1-21       (38) BCCCCCCCCCCCC
+ 137547                     1-21                                   CCCCCCCCCC-C
+ 
+ CNH INDUSTRIAL CAPITAL     6-18   $90,362-O                 PAID     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-21                  1-21       (32) BCCCCCCCCCCCC
+ 30315                      1-21                                   CCCCCCCCCC-C
+ 
+ CNH INDUSTRIAL CAPITAL     6-18  $120,362-O                 PAID     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-21                  1-21       (32) BCCCCCCCCCCCC
+ 30318                      1-21                                   CCCCCCCCCC-C
+ 
+ FARM CREDIT/AGDIRECT       9-15  $139,103-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  64-Y 1  1-11-21                  1-21       (64) BCCCCCCCCCCCC
+ 1513978                                                           CCCCCCCCCCCC
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+ 
+
+
+
+
+
+ 
+PAGE 3   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ MOUND CITY BANK            7-19    $2,250-O                 PAID     CURR ACCT
+ 4139240 BB UNS  12   1  7-31-20                  7-20       (13) BCCCCCCCCCCCC
+ 915256190493               7-20
+ 
+ MOUND CITY BANK           11-17  $297,500-O                 PAID     CURR ACCT
+ 4139240 BB R/C  6Y   1  1-24-20                  1-20       (27) BCCCCCCCCCCCC
+ 915256189149               1-20                                   CCCCCCCCCCCC
+ 
+ GM FINANCIAL              10-18    $7,500-O                 PAID     CURR ACCT
+ 3963206 FA AUT  36   1  3-07-19                  3-19       ( 5) BCCCC
+ 111016161536               3-19
+ 
+ TDRCS/RENOVATE            11-13   $20,000-L   $18,601-H     PAID     CURR ACCT
+ 1150660 BC CHG REV   1 10-31-18                 10-18       (60) BCCCCCCCCCCCC
+ 6006101001926424           8-16                                   CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       9-16   $70,300-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  51-Y 1  3-12-18                  3-18       (19) BCCCCCCCCCCCC
+ 20625803050490001                                                 CCCCCC
+ 
+ FARM CREDIT/AGDIRECT       5-15  $116,000-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  60-Y 1  3-12-18                  3-18       (34) BCCCCCCCCCCCC
+ 20625900000151001                                                 CCCCCCCCCCCC
+ 
+ SHEFFIELD FINANCIAL CO     4-17   $16,621-O                 PAID     CURR ACCT
+ 2580932 FP SEC  36   2  1-30-18                  1-18       ( 9) BCCCCCCCC
+ 1214089903                 1-18
+ 
+*CAP1/MNRDS                 2-04    $3,600-L    $3,600-H     PAID     CURR ACCT
+ 1942275 LZ CHG REV   2  9-24-17                  9-17       (99) BCCCCCCCCCCCC
+ 6004300102590269           1-13                                   CCCCCCCCCCCC
+ ** ACCOUNT CLOSED AT CREDIT GRANTOR'S REQUEST **
+ 
+ SHEFFIELD FINANCIAL CO     2-16   $16,211-O                 PAID     CURR ACCT
+ 2580932 FP SEC  36   2  4-25-17                  4-17       (15) BCCCCCCCCCCCC
+ 1168786008                 4-17                                   CC
+ 
+ CNH INDUSTRIAL CAPITAL    10-13  $402,800-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 2  7-03-16                  7-16       (33) BCCCCCCCCCCCC
+ 13663863261591018          6-16                                   CCCCCCCCCCCC
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+ 
+
+
+
+
+
+ 
+PAGE 4   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ CNH INDUSTRIAL CAPITAL     6-14   $70,800-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 2  7-03-16                  7-16       (25) BCCCCCCCCCCCC
+ 13663863261591021          6-16                                   CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     7-14  $499,022-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 2  7-03-16                  7-16       (23) BCCCCCCCCCCCC
+ 13663863261591022          6-16                                   CCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL    10-14  $137,800-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 2  7-03-16                  7-16       (21) BCCCCCCCCCCCC
+ 13663863261591023          6-16                                   CCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL    10-15   $45,300-O                 PAID     CURR ACCT
+ 1620196 FF CIL  36-Y 2  7-03-16                  7-16       ( 9) BCCCCCCCC
+ 13663863261591024          6-16
+ 
+ CNH INDUSTRIAL CAPITAL     4-14  $185,700-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 2  7-03-16                  7-16       (27) BCCCCCCCCCCCC
+ 13663863261591020          6-16                                   CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL    11-13  $100,300-O                 PAID     CURR ACCT
+ 1620196 FF CIL  60-Y 2  7-03-16                  7-16       (32) BCCCCCCCCCCCC
+ 13663863261591019          6-16                                   CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       9-15   $59,250-O                 PAID     CURR ACCT
+ 1921176 FZ AGR  63-Y 1  6-19-16                  6-16       (10) BCCCCCCCCC
+ 20625800000158001
+ 
+ ALLY FINANCIAL             7-15   $50,357-O                 PAID     CURR ACCT
+ 1918794 FA AUT  72   1  1-29-16                  1-16       ( 7) BCCCCCC
+ 611923720862              12-15
+ 
+*BMO HARRIS BANK NA         8-08  $200,000-L  $198,659-H     PAID     CURR ACCT
+ 0127150 BB CLS LOC   1  7-31-15                  7-15       (34) BCCCCCCCCCCCC
+ 3542026053                 7-15                                   CCCCCCCCCCCC
+ ** ACCOUNT CLOSED AT CONSUMER'S REQUEST **
+ 
+*CITI                      11-12   $13,200-L    $2,033-H     PAID     CURR ACCT
+ 1260847 BC CRC REV   1  6-08-15                  6-15       (31) B00000C000000
+ 412800410772               5-13                                   00000C00000C
+ ** CLOSED DUE TO INACTIVITY **
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+ 
+
+
+
+
+
+ 
+PAGE 5   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ JPMCB CARD                 1-08   $16,700-L   $16,640-H     PAID     CURR ACCT
+ 3182310 BC CRC REV   1  3-04-15                  3-15       (86) BCCCCCCCCCCCC
+ 426684116096               1-09                                   CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     7-13  $175,300-O                 PAID     CURR ACCT
+ 1620196 FF CIL  54-Y 2  1-03-15                  1-15       (18) BCCCCCCCCCCCC
+ 13663863261591016         12-14                                   CCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     9-13  $236,300-O                 PAID     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-03-15                  1-15       (16) BCCCCCCCCCCCC
+ 13663863204709017         12-14                                   CCC
+ 
+ WELLS FARGO DEALER SVC     9-12   $11,804-O                 PAID     CURR ACCT
+ 3828796 FA AUT  72   2  9-30-14                  9-14       (24) BCCCCCCCCCCCC
+ 515940153774               8-14                                   CCCCCCCCCCC
+ 
+ MOUND CITY BANK           10-20   $80,000-O                 OPEN     CURR ACCT
+ 4139240 BB R/C 30Y   1  2-04-24   $74,518        2-24       (40) CCCCCCCCCCCCC
+ 5256192169                 2-24      $343                         CCCCCCCCCCCC
+ 
+ MOUND CITY BANK            6-20  $510,400-O                 OPEN     CURR ACCT
+ 4139240 BB R/C 30Y   1  2-04-24  $447,645        2-24       (44) CCCCCCCCCCCCC
+ 6252291567                 2-24    $2,118                         CCCCCCCCCCCC
+ 
+ MARINE CREDIT UNION        5-21   $26,230-O                 OPEN     CURR ACCT
+ 1741560 FC SEC  60   2  1-31-24   $12,797        1-24       (33) CCCCCCCCCCCCC
+ 10541610300                1-24      $483                         CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     8-23  $125,350-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24  $129,232        1-24       ( 6) CCCCCC
+ 685669                             $2,566            
+ 
+ CNH INDUSTRIAL CAPITAL    12-22  $465,350-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24  $386,258        1-24       (14) CCCCCCCCCCCCC
+ 574877                    12-23    $9,291                         C
+ 
+ CNH INDUSTRIAL CAPITAL     6-21   $53,872-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24   $34,468        1-24       (32) CCCCCCCCCCCCC
+ 254364                     6-23    $1,008                         CCCCCCCCCCCC
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+ 
+
+
+
+
+
+ 
+PAGE 6   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ CNH INDUSTRIAL CAPITAL     6-23   $29,372-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24   $30,692        1-24       ( 8) CCCCCCCC
+ 656361                               $606            
+ 
+ CNH INDUSTRIAL CAPITAL     7-21   $69,872-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  84-Y 5  1-31-24   $41,015        1-24       (31) CCCCCCCCCCCCC
+ 263427                     2-22      $931                         CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL    10-21  $300,350-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24  $182,639        1-24       (28) CCCCCCCCCCCCC
+ 282057                    10-23    $5,385                         CCCCCCCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL    12-21  $400,350-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24  $247,807        1-24       (20) CCCCCCCCCCCCC
+ 298389                    12-23    $7,282                         CCCCCCC
+ 
+ CNH INDUSTRIAL CAPITAL     6-22  $132,850-O                 OPEN     CURR ACCT
+ 3620144 FF CIL  60-Y 1  1-31-24  $113,499        1-24       (20) CCCCCCCCCCCCC
+ 327829                     6-23    $2,627                         CCCCCCC
+ 
+ GOLDMAN SACHS AND CO       9-01   $10,000-L   $11,432-H     OPEN     CURR ACCT
+ 2927206 BB CRC REV   1  1-29-24    $4,654        1-24       (99) CCCCCCCCCCCCC
+ 1150001217293533           1-24       $55                         CCCCCCCCCC-C
+ 
+ MIDWESTONE BANK            7-15  $200,000-L  $200,000-H     OPEN     CURR ACCT
+ 1136390 BB H/E LOC   1  1-19-24        $0        1-24       (57) 0000000000000
+ 710000000000014778507>                                            000000000000
+ >15
+ 
+ GM FINANCIAL               9-22   $89,624-O                 OPEN     CURR ACCT
+ 3963206 FA AUT  37   1  1-13-24   $49,791        1-24       (16) CCCCCCCCCCCCC
+ 111063973540               1-24    $2,489                         CCC
+ 
+ FARM CREDIT/AGDIRECT       9-21  $101,250-O                 OPEN     CURR ACCT
+ 1921176 FZ AGR  61-Y 1 12-31-23   $62,545       12-23       (28) CCCCCCCCCCCCC
+ 3344802                            $1,840                         CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       3-23  $145,150-O                 OPEN     CURR ACCT
+ 1921176 FZ AGR  85-Y 1 12-31-23  $145,150       12-23       (10) CCCCCCCCCC
+ 3412610                            $2,271            
+ 
+ +++++ MORE
+ 
+
+
+
+
+
+
+
+
+TBD2 AFM 2530350    RILEY,JEFFREY E 399487910;CA-10474 COUNTY ROAD M/DARLINGTON 
+ 
+
+
+
+
+
+ 
+PAGE 7   DATE  2-12-2024  TIME 14:19:31  V801  TWI1
+ 
+ SUBSCRIBER                 OPEN    AMT-TYP1    AMT-TYP2 ACCTCOND   PYMT STATUS
+ SUB#   KOB TYP TRM ECOA BALDATE     BALANCE   PYMT LEVEL MOS REV  PYMT HISTORY
+ ACCOUNT #               LAST PD   MONTH PAY    PAST DUE  MAXIMUM    BY MONTH
+ 
+ FARM CREDIT/AGDIRECT      11-21  $118,050-O                 OPEN     CURR ACCT
+ 1921176 FZ AGR  61-Y 1 12-31-23   $73,091       12-23       (26) CCCCCCCCCCCCC
+ 3355351                            $2,162                         CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       4-21   $40,350-O                 OPEN     CURR ACCT
+ 1921176 FZ AGR  62-Y 1 12-31-23   $25,061       12-23       (33) CCCCCCCCCCCCC
+ 3319820                              $811                         CCCCCCCCCCCC
+ 
+ FARM CREDIT/AGDIRECT       9-22   $49,150-O                 OPEN     CURR ACCT
+ 1921176 FZ AGR  50-Y 1 12-31-23   $38,265       12-23       (16) CCCCCCCCCCCCC
+ 3394050                            $1,206                         CCC
+ 
+ --------------------------------- MESSAGES -----------------------------------
+  MSG 175: MODEL G BLOCKED
+ 
+ END -- EXPERIAN
+ 
+
+
+
+
+
+
+
+
+]]></printImage>
+          </response>
+        </dataSource>
+      </dataSourceList>
+      <first_name>CHERYL</first_name>
+      <middle_initial>A</middle_initial>
+      <last_name>RILEY</last_name>
+      <name_suffix/>
+      <SSN>391824132</SSN>
+      <current_address>
+        <address>9141 R &amp;amp; K ROAD</address>
+        <city>DARLINGTON</city>
+        <state>WI</state>
+        <zip>53530</zip>
+      </current_address>
+      <decisionData>
+        <dataSourceAnalysisList>
+          <dataSourceAnalysis code="XPN">
+            <indicators/>
+            <characteristics/>
+          </dataSourceAnalysis>
+        </dataSourceAnalysisList>
+        <scoringList>
+          <scoring type="SBSS70">
+            <model>199</model>
+            <totalScore>998</totalScore>
+            <modelReasonList/>
+            <scoreReasonList/>
+          </scoring>
+        </scoringList>
+      </decisionData>
+    </principal_info>
+  </principal_list>
+  <business_info business_xref_id="57041" ol_cb_score_cutoff="300" scoring_model_suite_type="700">
+    <business_legal_name>RILEY JEFFREY EARL</business_legal_name>
+    <business_address>10474 COUNTY ROAD M</business_address>
+    <business_city>DARLINGTON</business_city>
+    <business_state>WI</business_state>
+    <business_zip>53530</business_zip>
+    <decisionData>
+      <scoringList>
+        <scoring type="SBSS70">
+          <model>711</model>
+          <totalScore>216.0</totalScore>
+          <modelReasonList>
+            <modelReason>NH</modelReason>
+            <modelReason>ND</modelReason>
+            <modelReason>CE</modelReason>
+            <modelReason>CP</modelReason>
+          </modelReasonList>
+          <scoreReasonList>
+            <scoreReason>
+              <reasonCode>NH</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+            <scoreReason>
+              <reasonCode>ND</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+            <scoreReason>
+              <reasonCode>CE</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+            <scoreReason>
+              <reasonCode>CP</reasonCode>
+              <scoringModel>711</scoringModel>
+            </scoreReason>
+          </scoreReasonList>
+        </scoring>
+        <scoring type="BK10">
+          <model>777</model>
+          <totalScore>396.0</totalScore>
+          <modelReasonList>
+            <modelReason>UK</modelReason>
+            <modelReason>UI</modelReason>
+            <modelReason>CE</modelReason>
+            <modelReason>CP</modelReason>
+          </modelReasonList>
+        </scoring>
+      </scoringList>
+    </decisionData>
+  </business_info>
+  <response_message_list transaction_status_code="001" transaction_status_text="Successful - warnings">
+    <message_info>
+      <message_code>0x8004285d</message_code>
+      <message_source>DataSourceProcessingService</message_source>
+      <message_text>TID:{13759a59-0273-4473-9df7-8af054261fd7} - Principal: Bureau error/warning ; Descr - Data Source (XPN) analysis error: code '1000'; msg 'XPN' returned an error. 'XPN' error code = [1000]'</message_text>
+    </message_info>
+  </response_message_list>
+</FI_LiquidCredit>
+</ns2:ObtainDecisionDataResult></ns2:ObtainDecisionDataResponse></SOAP:Body></SOAP:Envelope>
