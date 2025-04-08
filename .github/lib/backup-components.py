@@ -16,7 +16,7 @@ os.system(f'git config --global user.email {GIT_USER_EMAIL}')
 os.system(f'git config --global user.name {GIT_USER_NAME}')
 
 # stage and commit the changes
-os.system('git add .')
+os.system('git add force-app/main/default')
 os.system(f'git commit -m "backup: sync all components from {BASE_BRANCH} org to {BASE_BRANCH} backup branch"')
 
 # push the changes to remote
@@ -25,6 +25,9 @@ result = subprocess.run(
 			capture_output=True, 
 			text=True
 		)
+
+print(result.stdout)
+print(result.stderr)
 
 if result.returncode == 0:
     print('******* Successfully pushed to remote *******')
